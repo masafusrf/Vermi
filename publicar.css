@@ -14,14 +14,14 @@
 .subirImg {
     position: relative;
     height: 180px;
-    border: 1px solid #30d066;
+    border: 1px solid #5b92c6;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     /* si la imagen subida es más grande, lo que sobra se oculta */
     overflow: hidden; 
-    color: #03bc69;
+    color: #468aca;
 }
 
 
@@ -87,7 +87,7 @@ select {
 /* pseudoclases */
 
 .subirImg:hover {
-    background-color: #28b4881f;
+    background-color: #468aca2a;
 }
 
 #cancelar:hover {

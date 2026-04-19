@@ -10,7 +10,6 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #163A5F;
-    position: sticky;
     top: 0;
     z-index: 1000;
     color: aliceblue;

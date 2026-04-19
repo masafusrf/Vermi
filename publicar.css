@@ -1,0 +1,107 @@
+#contenido {
+    margin: 10% 20% 5% 20%;
+}
+
+
+#formPublicar {
+    width: 360px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.subirImg {
+    position: relative;
+    height: 180px;
+    border: 1px solid #30d066;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* si la imagen subida es más grande, lo que sobra se oculta */
+    overflow: hidden; 
+    color: #03bc69;
+}
+
+
+.subirImg input {
+    display: none;
+}
+
+/* imagen preview*/
+#preview {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+/* texto encima */
+#texto {
+    position: absolute;
+    z-index: 2;
+}
+
+input, input[type="date"]{
+    height: 30px;
+}
+
+input[type="text"] {
+    padding: 10px;
+}
+
+select {
+    padding: 10px;
+    width: 100%;
+}
+
+
+#botonesGuardar {
+    display: flex;
+    flex-direction: row;
+}
+
+#cancelar,
+#guardar {
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+#cancelar {
+    background-color: #c65b5b;
+}
+
+#guardar {
+    margin-left: 55px;
+    background-color: #28B487;
+}
+
+
+
+/* pseudoclases */
+
+.subirImg:hover {
+    background-color: #28b4881f;
+}
+
+#cancelar:hover {
+    background-color: #c94545;
+}
+
+#guardar:hover {
+    background-color: #03bc69;
+}
+
+#cancelar:active {
+    background-color: #cb3333;
+}
+
+#guardar:active {
+    background-color: #30d066;
+}

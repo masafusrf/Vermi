@@ -11,23 +11,23 @@
     gap: 12px;
 }
 
-.subirImg {
+/* .subirImg {
     position: relative;
     height: 180px;
     border: 1px solid #5b92c6;
     cursor: pointer;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     /* si la imagen subida es más grande, lo que sobra se oculta */
-    overflow: hidden; 
+    /* overflow: hidden; 
     color: #468aca;
-}
+} */
 
 
-.subirImg input {
+/* .subirImg input {
     display: none;
-}
+} */
 
 /* imagen preview*/
 #preview {
@@ -46,10 +46,6 @@
 
 input, input[type="date"]{
     height: 30px;
-}
-
-input[type="text"] {
-    padding: 10px;
 }
 
 select {
@@ -86,9 +82,9 @@ select {
 
 /* pseudoclases */
 
-.subirImg:hover {
+/* .subirImg:hover {
     background-color: #468aca2a;
-}
+} */
 
 #cancelar:hover {
     background-color: #c94545;

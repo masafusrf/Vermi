@@ -45,20 +45,52 @@
                 <option value="publico">🟢 Público</option>
                 <option value="seguidores">🟡 Solo seguidores</option>
             </select>
-            <label class="subirImg">
-                <span id="texto">Añadir imagen (opcional)</span>
-                <img id="preview" />
-                <input type="file" name="imagen" accept="image/*" id="fileInput">
-            </label>
 
-            <input type="text" name="titulo" placeholder="Título de la publicación" required>
-            <input type="text" name="descripcion" placeholder="Descripción">
-            <input type="text" name="ubicacion" placeholder="Ubicación">
-            <input type="text" name="etiquetas" placeholder="Etiquetas">
-            <input type="date" name="fecha">
+
+                <label class="subirImg" for="fileInput">Añadir imagen (máx. 5)</label>
+
+                <div class="subirImg">
+                    <img id="preview" />
+                    <input type="file" name="imagen" accept="image/*" id="fileInput">
+                </div>
+                
+                <div class="subirImg">
+                    <img id="preview" />
+                    <input type="file" name="imagen" accept="image/*" id="fileInput">
+                </div>
+
+                <div class="subirImg">
+                    <img id="preview" />
+                    <input type="file" name="imagen" accept="image/*" id="fileInput">
+                </div>
+
+                <div class="subirImg">
+                    <img id="preview" />
+                    <input type="file" name="imagen" accept="image/*" id="fileInput">
+                </div>
+
+                <div class="subirImg">
+                    <img id="preview" />
+                    <input type="file" name="imagen" accept="image/*" id="fileInput">
+                </div>
+
+            <label for="titulo">Título de la publicación</label>
+            <input type="text" name="titulo" id="titulo" required>
+
+            <label for="descripcion">Descripción</label>
+            <input type="text" name="descripcion" id="descripcion">
+
+            <label for="ubicacion">Ubicación</label>
+            <input type="text" name="ubicacion" id="ubicacion">
+
+            <label for="etiquetas">Etiquetas</label>
+            <input type="text" name="etiquetas" id="etiquetas">
+
+            <label for="fecha">Fecha</label>
+            <input type="date" name="fecha" id="fecha">
 
             <div id="botones">
-                <button id="cancelar" type="button" onclick="history.back()">Cancelar</button>
+                <button id="cancelar" type="button" href="index.php">Cancelar</button>
                 <button id="guardar" type="submit" value="publicar">Publicar</button>
             </div>
 
@@ -84,7 +116,7 @@
     </footer>
 
     <!-- script de js para hacer que al elegir la foto que queramos, se vea una preview -->
-    <script>
+    <!-- <script>
         const fileInput = document.getElementById("fileInput");
         const preview = document.getElementById("preview");
         const text = document.getElementById("text");
@@ -104,7 +136,7 @@
                 reader.readAsDataURL(file);
             }
         });
-    </script>
+    </script> -->
 </body>
 
 </html>

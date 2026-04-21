@@ -1,0 +1,168 @@
+/*Contenedor principal (Flexbox para las columnas)*/
+.contenedor-principal {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-shrink: 0;
+    max-width: 1400px;
+    margin: 0 auto; /*Añade margen necesario a la izquierda y 
+                    derecha del contendor y añade el margen 
+                    necesario para centrar el main*/
+}
+
+/* Columnas laterales*/
+#columna-izquierda, #columna-derecha {
+    flex: 1;        /*obliga al contenido a ocupar una unidad 
+                    de espacio*/
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: sticky; 
+    top: 100px;  /* Ajusta este valor según la altura de tu header para que no se solapen */
+    align-self: flex-start;
+}
+
+/* Columna central (más ancha) */
+#columna-central {
+    flex: 2;        /*obliga al contenido a ocupar 2 unidades 
+                    de espacio*/
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    gap: 20px;
+}
+
+/*###################################################
+#columna-izquierda .tarjeta-fija:first-child{
+    max-width: 200px;
+    margin-left: auto;
+}
+###################################################*/
+/* Estilo común para todas las tarjetas */
+.tarjeta-fija, .publicacion {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    /*0px(h) | 2px(v) | 4px(difuminado)|
+    rgba(negro con 10% opacidad)*/
+}
+
+/*elimino hueco encima de los títulos*/
+.tarjeta-fija h3 {
+    margin-top: 0px;
+}
+
+/* Publicaciones */
+.publicacion .cabecera-post {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.foto-perfil {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover; /*llena el contenedor con la imagen 
+                        aunque tenga que recortarla*/
+}
+
+.nombre-usuario {
+    font-weight: bold;
+    display: block;
+}
+
+.fecha {
+    color: rgb(151, 151, 151);
+}
+
+.imagen-post {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Recuerdos rapidos (Grid para las fotos pequeñas) */
+.recuerdos-rapidos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.recuerdos-rapidos img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    
+}
+
+/* Etiquetas y botones */
+.lista-etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.boton-etiqueta {
+    background: #e4e6eb;
+    text-decoration: none;
+    color: #050505;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.boton-etiqueta:hover{
+    cursor: pointer;
+    background-color: rgb(182, 193, 224);
+}
+
+.persona-sugerida{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.persona-sugerida .foto-perfil {  /*limitar tamaño de las fotos 
+                                  de perfil de gente sujerida*/
+    width: 50px;
+    height: 50px;
+}
+
+.persona-sugerida a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none; 
+    color: inherit;
+    flex: 1;
+    min-width: 0;
+}
+
+.persona-sugerida a span {
+    white-space: nowrap;
+    overflow: hidden;
+    flex: 1;
+    margin: 0 10px;
+    min-width: 0;
+}
+
+.boton-seguir {
+    background-color: #0866ff;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.boton-seguir:hover {
+    background-color: #0055d4;
+}

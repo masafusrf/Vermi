@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar perfil</title>
-    <link rel="stylesheet" href="editarPerfil.css">
+    <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="assets/vermiLogo.png" type="image/x-icon">
 </head>
@@ -25,9 +25,101 @@
     </header>
 
 
-    <main>
-        
-    </main>
+    <main class="contenedor-principal">
+    
+    <aside id="columna-izquierda">
+        <section class="tarjeta-fija">
+            <h3>Recuerdos rápidos</h3>
+            <div class="recuerdos-rapidos">
+                <a href="#"><img src="assets/amanecer.png" alt="Recuerdo"></a>
+                <a href="#"><img src="assets/amanecer.png" alt="Recuerdo"></a>
+                <a href="#"><img src="assets/vermiLogo.png" alt="Recuerdo"></a>
+                <a href="#"><img src="assets/vermiLogo.png" alt="Recuerdo"></a>
+                <a href="#"><img src="assets/vermiLogo.png" alt="Recuerdo"></a>
+            </div>
+        </section>
+
+        <section class="tarjeta-fija">
+            <h3>Etiquetas populares</h3>
+            <div class="lista-etiquetas">
+                <a href="#" class="boton-etiqueta">#Verano</a>
+                <a href="#" class="boton-etiqueta">#Comida</a>
+                <a href="#" class="boton-etiqueta">#Photooftheday</a>
+                <a href="#" class="boton-etiqueta">#Musica</a>
+                <a href="#" class="boton-etiqueta">#Vermi</a>
+                <a href="#" class="boton-etiqueta">#SanJuan</a>
+                <a href="#" class="boton-etiqueta">#Fallas</a>
+                <a href="#" class="boton-etiqueta">#Viajes</a>
+            </div>
+        </section>
+    </aside>
+
+    <section id="columna-central">
+        <article class="publicacion">
+            <div class="cabecera-post">
+                <img src="assets/vermiLogo.png" class="foto-perfil">
+                <div>
+                    <span class="nombre-usuario">Juan Pérez</span>
+                    <small class="fecha">Hace 2 horas</small>
+                </div>
+            </div>
+            <p class="texto-post">¡Disfrutando de un gran día de sol!</p>
+            <img src="assets/amanecer.png" class="imagen-post">
+        </article>
+
+        <article class="publicacion">
+            <div class="cabecera-post">
+                <img src="assets/vermiLogo.png" class="foto-perfil">
+                <div>
+                    <span class="nombre-usuario">Maria García</span>
+                    <small class="fecha">Hace 5 horas</small>
+                </div>
+            </div>
+            <p class="texto-post">Mirad qué paisaje más increíble.</p>
+            <img src="https://via.placeholder.com/500x300" class="imagen-post">
+        </article>
+
+        <article class="publicacion">
+            <div class="cabecera-post">
+                <img src="assets/vermiLogo.png" class="foto-perfil">
+                <div>
+                    <span class="nombre-usuario">Carlos Ruiz</span>
+                    <small class="fecha">Ayer</small>
+                </div>
+            </div>
+            <p class="texto-post">Cena con amigos en Valencia.</p>
+            <img src="https://via.placeholder.com/500x300" class="imagen-post">
+        </article>
+    </section>
+
+    <aside id="columna-derecha">
+        <section class="tarjeta-fija">
+            <h3>Sugerencias</h3>
+            <div class="persona-sugerida">
+                <a href="#">
+                    <img src="assets/Ana Lopez.png" class="foto-perfil">
+                    <span>Ana López</span>
+                </a>
+                <button class="boton-seguir">Seguir</button>
+            </div>
+            <div class="persona-sugerida">
+                <a href="#">
+                    <img src="assets/Pedro Marmol.png" class="foto-perfil">
+                    <span>Pedro Marmol</span>
+                </a>
+                <button class="boton-seguir">Seguir</button>
+            </div>
+            <div class="persona-sugerida">
+                <a href="#">
+                    <img src="assets/Laura Sol.png" class="foto-perfil">
+                    <span>Laura Sol</span>
+                </a>
+                <button class="boton-seguir">Seguir</button>
+            </div>
+        </section>
+    </aside>
+
+</main>
 
 
     <footer>

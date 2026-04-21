@@ -19,7 +19,7 @@
     flex-direction: column;
     gap: 20px;
     position: sticky; 
-    top: 100px;  /* Ajusta este valor según la altura de tu header para que no se solapen */
+    top: 110px;  /* Ajusta este valor según la altura de tu header para que no se solapen */
     align-self: flex-start;
 }
 

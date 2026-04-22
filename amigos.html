@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar perfil</title>
-    <link rel="stylesheet" href="amigos.css">
+    <title>Vermi - Mis Amigos</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="amigos.css">
     <link rel="shortcut icon" href="assets/vermiLogo.png" type="image/x-icon">
 </head>
 <body>
@@ -18,17 +19,76 @@
             <ul>
                 <li><a href="home.html">Inicio</a></li>
                 <li><a href="publicar.html">Publicar</a></li>
-                <li><a href="amigos.html">Amigos</a></li>
+                <li><a href="amigos.html" style="text-decoration: underline;">Amigos</a></li>
                 <li><a href="#">Mi perfil</a></li>
             </ul>
         </nav>
     </header>
 
+    <main class="contenedor-principal">
+        <aside id="columna-izquierda">
+            <section class="tarjeta-fija">
+                <h3>Amigos</h3>
+                <nav class="menu-amigos">
+                    <a href="#" class="enlace-activo">Todos los amigos</a>
+                    <a href="#">Recientes</a>
+                    <a href="#">Bloqueados</a>
+                </nav>
+            </section>
+        </aside>
 
-    <main>
-        
+        <section id="columna-central">
+            <div class="cabecera-seccion">
+                <h2>Mis Amigos (150)</h2>
+                <input type="text" placeholder="Buscar amigos..." class="buscador-amigos">
+            </div>
+
+            <div class="grid-amigos">
+                <div class="tarjeta-amigo">
+                    <img src="assets/Ana Lopez.png" alt="Ana" class="foto-amigo-grande">
+                    <div class="info-amigo">
+                        <span class="nombre-usuario">Ana López</span>
+                        <small>12 amigos en común</small>
+                    </div>
+                    <button class="boton-etiqueta">Mensaje</button>
+                </div>
+
+                <div class="tarjeta-amigo">
+                    <img src="assets/Pedro Marmol.png" alt="Pedro" class="foto-amigo-grande">
+                    <div class="info-amigo">
+                        <span class="nombre-usuario">Pedro Marmol</span>
+                        <small>5 amigos en común</small>
+                    </div>
+                    <button class="boton-etiqueta">Mensaje</button>
+                </div>
+
+                <div class="tarjeta-amigo">
+                    <img src="assets/Laura Sol.png" alt="Laura" class="foto-amigo-grande">
+                    <div class="info-amigo">
+                        <span class="nombre-usuario">Laura Sol</span>
+                        <small>Valencia, España</small>
+                    </div>
+                    <button class="boton-etiqueta">Mensaje</button>
+                </div>
+            </div>
+        </section>
+
+        <aside id="columna-derecha">
+            <section class="tarjeta-fija">
+                <h3>Solicitudes</h3>
+                <div class="solicitud-pendiente">
+                    <div class="cabecera-post">
+                        <img src="assets/vermiLogo.png" class="foto-perfil">
+                        <span class="nombre-usuario">Roberto V.</span>
+                    </div>
+                    <div class="acciones-solicitud">
+                        <button class="boton-seguir">Confirmar</button>
+                        <button class="boton-etiqueta">Eliminar</button>
+                    </div>
+                </div>
+            </section>
+        </aside>
     </main>
-
 
     <footer>
         <div id="paginasFooter">
@@ -36,9 +96,8 @@
             <a href="">Contacta con nosotros</a>
             <a href="">Política de privacidad</a>
         </div>
-
         <div id="logoYCopyFooter">
-            <img src="assets/vermiLogo.png" alt="" srcset="">
+            <img src="assets/vermiLogo.png" alt="">
             <div id="textoLogo">
                 <p>VERMI</p>
                 <p>Recuerda en voz alta</p>

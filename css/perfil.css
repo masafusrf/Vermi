@@ -198,37 +198,39 @@
 /* Stats y acciones en una fila */
 .publicacion-stats {
     display: flex;
-    align-items: center;
-    gap: 16px;
-    padding: 10px 16px;
     border-top: 1px solid #e0e3e8;
-    font-size: 0.9rem;
-    color: #6b7280;
 }
 
-.stat-like-activo {
-    color: #e05a5a;
-}
-
-.btn-accion {
+.btn-stat {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 0;
     background: none;
     border: none;
-    font-size: 0.88rem;
+    border-right: 1px solid #e0e3e8;
     color: #6b7280;
-    padding: 0;
+    font-size: 0.9rem;
 }
 
-.btn-accion:hover {
+.btn-stat:last-child {
+    border-right: none;
+}
+
+.btn-stat svg {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-stat:hover {
+    background-color: #f0f2f5;
     color: #1a2d4a;
 }
 
-.btn-eliminar {
-    margin-left: auto;
+.btn-like.activo {
     color: #e05a5a;
-}
-
-.btn-eliminar:hover {
-    color: #c0392b;
 }
 
 /* Ver más sugerencias */

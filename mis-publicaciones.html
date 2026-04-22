@@ -9,20 +9,20 @@
 </head>
 <body>
 
-    <nav class="nav-principal" aria-label="Navegacion principal">
-        <div class="nav-inner">
-            <a href="#" class="nav-marca">
-                <img src="img/logo-test.png" alt="Logo Vermi">
-                Vermi
-            </a>
-            <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Publicar</a></li>
-                <li><a href="#">Amigos</a></li>
-                <li><a href="mis-publicaciones.html" class="activo">Mi perfil</a></li>
-            </ul>
+    <header>
+        <div class="headerIzquierdo">
+            <img src="assets/vermiLogo.png" alt="Logotipo Vermi" class="logoNav">
+            <span>Vermi</span>
         </div>
-    </nav>
+        <nav class="headerCentral">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="publicar.html">Publicar</a></li>
+                <li><a href="#">Amigos</a></li>
+                <li><a href="#">Mi perfil</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="layout-pagina">
 
@@ -248,23 +248,19 @@
     </div>
 
     <footer>
-        <div class="footer-inner">
-            <ul class="footer-links">
-                <li><a href="#">Sobre Vermi</a></li>
-                <li><a href="#">Contacta con nosotros</a></li>
-                <li><a href="#">Politica de privacidad</a></li>
-            </ul>
-            <hr class="footer-separador">
-            <div class="footer-bottom">
-                <div class="footer-marca">
-                    <img src="img/logo-test.png" alt="Logo Vermi">
-                    <div class="footer-marca-texto">
-                        <span>VERMI</span>
-                        <span class="footer-eslogan">Recuerda en voz alta</span>
-                    </div>
-                </div>
-                <small>&#169; Todos los derechos reservados.</small>
+        <div id="paginasFooter">
+            <a href="">Sobre Vermi</a>
+            <a href="">Contacta con nosotros</a>
+            <a href="">Política de privacidad</a>
+        </div>
+
+        <div id="logoYCopyFooter">
+            <img src="assets/vermiLogo.png" alt="" srcset="">
+            <div id="textoLogo">
+                <p>VERMI</p>
+                <p>Recuerda en voz alta</p>
             </div>
+            <p>© Todos los derechos reservados.</p>
         </div>
     </footer>
 

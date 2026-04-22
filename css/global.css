@@ -21,55 +21,27 @@ a   { text-decoration: none; color: inherit; }
 ul  { list-style: none; }
 
 /* Nav */
-nav.nav-principal {
-    background-color: #1a2d4a;
-    height: 60px;
+/* HEADER (General)*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #163A5F;
+    top: 0;
+    z-index: 1000;
+    color: aliceblue;
     position: sticky;
     top: 0;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    padding: 0 24px;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
 }
-
-.nav-inner {
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-}
-
-.nav-marca {
+/* HEADER (Interno) */
+.headerIzquierdo,
+.headerCentral {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: white;
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-.nav-marca img {
-    width: 36px;
-    height: 36px;
-}
-
-.nav-links {
-    margin-left: auto;
-    display: flex;
-    gap: 4px;
-}
-
-.nav-links a {
-    color: white;
-    padding: 6px 14px;
-    border-radius: 4px;
-    font-size: 0.9rem;
-}
-
-.nav-links a:hover,
-.nav-links a.activo {
-    background-color: rgba(255, 255, 255, 0.15);
 }
 
 /* Layout */

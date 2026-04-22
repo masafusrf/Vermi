@@ -1,0 +1,108 @@
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #f4f4f6; /* El gris claro de fondo */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #1b3a57;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+h1.titulo {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+section.box-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+div.form {
+    display: flex;
+    flex-direction: column;
+    background-color: white; 
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+section.form-content {
+    width: 100%;
+}
+
+label {
+    color: #555;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input.user, input.password {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box; 
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input.user:focus, input.password:focus {
+    outline: none;
+    border-color: #2ea09b; 
+}
+
+button {
+    background-color: #2ea09b; 
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #258581;
+}
+
+p.registro {
+    color: #666;
+    font-size: 0.85rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+p.registro a {
+    color: #2ea09b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #1b3a57;
+    color: #aaa;
+    text-align: center;
+    padding: 30px;
+    margin-top: auto;
+    font-size: 0.8rem;
+}

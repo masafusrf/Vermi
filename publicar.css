@@ -1,5 +1,5 @@
 #contenido {
-    margin: 5% 20% 5% 20%;
+    margin: 5% 15% 5% 15%;
 }
 
 
@@ -9,39 +9,6 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-}
-
-/* .subirImg {
-    position: relative;
-    height: 180px;
-    border: 1px solid #5b92c6;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* si la imagen subida es más grande, lo que sobra se oculta */
-    /* overflow: hidden; 
-    color: #468aca;
-} */
-
-
-/* .subirImg input {
-    display: none;
-} */
-
-/* imagen preview*/
-#preview {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: none;
-}
-
-/* texto encima */
-#texto {
-    position: absolute;
-    z-index: 2;
 }
 
 input, input[type="date"]{
@@ -70,28 +37,30 @@ select {
 }
 
 #cancelar {
-    background-color: #c65b5b;
+    background-color: #fdeaea;  
+    color: #c65b5b;
+    border: 1.5px solid #c65b5b;
 }
 
 #guardar {
     margin-left: 55px;
-    background-color: #28B487;
+    background-color: #eaedfd;
+    color: #5b92c6;
+    border: 1.5px solid #5b92c6;
 }
 
 
 
 /* pseudoclases */
 
-/* .subirImg:hover {
-    background-color: #468aca2a;
-} */
-
 #cancelar:hover {
-    background-color: #c94545;
+    background-color: #c65b5b;
+    color: white;
 }
 
 #guardar:hover {
-    background-color: #03bc69;
+    background-color: #4a7fb0;
+    color: white;
 }
 
 #cancelar:active {
@@ -99,5 +68,5 @@ select {
 }
 
 #guardar:active {
-    background-color: #30d066;
+    background-color: #2a80d0;
 }

@@ -1,5 +1,5 @@
 #contenido{
-    margin: 5% 20% 5% 20%;
+    margin: 5% 15% 5% 15%;
 }
 
 #fotoPerfil{
@@ -29,34 +29,39 @@
     transition: background-color 0.3s ease;
 }
 
-#cambiarFoto{
-    margin-left: 30px;
-    background-color: #5b92c6;
-}
-
-#eliminarFoto{
+#eliminarFoto {
     position: absolute;
     top: 60px;
     right: 0px;
-    background-color: #c65b5b;
+    background-color: #fdeaea;  
+    color: #c65b5b;
+    border: 1.5px solid #c65b5b;
+}
+
+#cambiarFoto {
+    margin-left: 30px;
+    background-color: #eaedfd;
+    color: #5b92c6;
+    border: 1.5px solid #5b92c6;
 }
 
 #nombres{
     margin-left: 10px;
     position: relative;
+    padding-bottom: 10px;
 }
 
-#nombres h5{
+#nombres h4{
     margin-top: 0;
     position: absolute;
     top: 30px;
 }
 
-#formDatos{
-    margin: 60px auto 0 230px;
+#formDatos {
+    margin: 60px auto 0;
+    width: 300px;
     display: flex;
     flex-direction: column;
-    width: 50%;
 }
 
 input{
@@ -70,6 +75,7 @@ input{
 textarea{
     height: 200px;
     resize: none;
+    width: 250px;
 }
 
 #botonesGuardar{
@@ -79,19 +85,22 @@ textarea{
 
 #cancelar, #guardar{
     height: 50px;
-    width: 150px;
+    width: 120px;
     border-radius: 5px;
-    border: none;
     transition: background-color 0.3s ease;
 }
 
 #cancelar{
-    background-color: #c65b5b;
+    background-color: #fdeaea;  
+    color: #c65b5b;
+    border: 1.5px solid #c65b5b;
 }
 
 #guardar{
-    margin-left: 155px;
-    background-color: #28B487;
+    background-color: #eaedfd;
+    color: #5b92c6;
+    border: 1.5px solid #5b92c6;
+    margin-left: 15px;
 }
 
 #eliminarFoto, #cambiarFoto, #cancelar, #guardar{
@@ -103,19 +112,23 @@ textarea{
 /* pseudoclases */
 
 #cambiarFoto:hover{
-    background-color: #468aca;
+    background-color: #4a7fb0;
+    color: white;
 }
 
-#eliminarFoto:hover{
-    background-color: #c94545;
+#eliminarFoto:hover {
+    background-color: #c65b5b;
+    color: white;
 }
 
 #cancelar:hover{
-    background-color: #c94545;
+    background-color: #c65b5b;
+    color: white;
 }
 
 #guardar:hover{
-    background-color: #03bc69;
+    background-color: #4a7fb0;
+    color: white;
 }
 
 #cancelar:active{
@@ -123,7 +136,7 @@ textarea{
 }
 
 #guardar:active{
-    background-color: #30d066;
+    background-color: #2a80d0;
 }
 
 #eliminarFoto:active{

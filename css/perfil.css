@@ -124,19 +124,26 @@
     font-weight: bold;
 }
 
-/* Botón Seguir */
-.btn-seguir {
+/* Botón seguir */
+.btn-seguir, .btn-editar-perfil {
     background-color: #3dbfad;
     color: white;
     border: none;
     padding: 6px 14px;
     border-radius: 4px;
     font-size: 0.85rem;
-    cursor: pointer;
+}
+.btn-seguir:hover {
+    background-color: #3dbfaed2;
 }
 
-.btn-seguir:hover {
-    background-color: #2ea898;
+/* Botón editar perfil */
+.btn-editar-perfil {
+    margin-top: 8px;
+    background-color: #1a2d4a;
+}
+.btn-editar-perfil:hover {
+    background-color: #1a284ad4;
 }
 
 /* Descripción, fecha y etiquetas */
@@ -175,7 +182,6 @@
     background: none;
     border: none;
     font-size: 0.78rem;
-    cursor: pointer;
     color: #6b7280;
     padding: 0;
 }
@@ -209,7 +215,6 @@
     border: none;
     font-size: 0.88rem;
     color: #6b7280;
-    cursor: pointer;
     padding: 0;
 }
 
@@ -234,7 +239,6 @@
     border: none;
     font-size: 0.82rem;
     color: #3dbfad;
-    cursor: pointer;
     padding: 8px 0 0 0;
     text-align: left;
 }

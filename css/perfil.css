@@ -1,0 +1,244 @@
+/* perfil.css - mis vistas */
+
+/* Cabecera del perfil */
+.perfil-cabecera {
+    background-color: white;
+    border-radius: 6px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.perfil-foto {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.perfil-nombre {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.perfil-descripcion {
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+/* Contadores */
+.perfil-contadores {
+    display: flex;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+.perfil-contadores div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perfil-contadores strong {
+    font-size: 1.1rem;
+}
+
+.perfil-contadores span {
+    font-size: 0.78rem;
+    color: #6b7280;
+}
+
+/* Pestañas */
+.perfil-tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e0e3e8;
+}
+
+.perfil-tabs a {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    color: #6b7280;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+}
+
+.perfil-tabs a:hover {
+    color: #1a2d4a;
+}
+
+.perfil-tabs a.tab-activa {
+    color: #3dbfad;
+    border-bottom-color: #3dbfad;
+    font-weight: bold;
+}
+
+/* Lista de publicaciones */
+.publicacion-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.publicacion-card {
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.publicacion-card figure {
+    margin: 0;
+}
+
+.publicacion-card figure img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+/* Autor: avatar + nombre + Seguir */
+.publicacion-autor-barra {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    border-bottom: 1px solid #e0e3e8;
+}
+
+.publicacion-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.publicacion-autor-nombre {
+    flex: 1;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+/* Botón Seguir */
+.btn-seguir {
+    background-color: #3dbfad;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.btn-seguir:hover {
+    background-color: #2ea898;
+}
+
+/* Descripción, fecha y etiquetas */
+.publicacion-cuerpo {
+    padding: 12px 16px;
+}
+
+.publicacion-descripcion {
+    font-size: 0.9rem;
+    color: #1a2d4a;
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.publicacion-fecha {
+    font-size: 0.78rem;
+    color: #6b7280;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.publicacion-etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+}
+
+.publicacion-etiquetas .etiqueta {
+    font-size: 0.78rem;
+    padding: 3px 10px;
+}
+
+.btn-ver-mas-etiquetas,
+.btn-editar-etiquetas {
+    background: none;
+    border: none;
+    font-size: 0.78rem;
+    cursor: pointer;
+    color: #6b7280;
+    padding: 0;
+}
+
+.btn-ver-mas-etiquetas:hover,
+.btn-editar-etiquetas:hover {
+    color: #1a2d4a;
+}
+
+.btn-editar-etiquetas {
+    margin-left: auto;
+}
+
+/* Stats y acciones en una fila */
+.publicacion-stats {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 10px 16px;
+    border-top: 1px solid #e0e3e8;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+.stat-like-activo {
+    color: #e05a5a;
+}
+
+.btn-accion {
+    background: none;
+    border: none;
+    font-size: 0.88rem;
+    color: #6b7280;
+    cursor: pointer;
+    padding: 0;
+}
+
+.btn-accion:hover {
+    color: #1a2d4a;
+}
+
+.btn-eliminar {
+    margin-left: auto;
+    color: #e05a5a;
+}
+
+.btn-eliminar:hover {
+    color: #c0392b;
+}
+
+/* Ver más sugerencias */
+.btn-ver-mas-sugerencias {
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 0.82rem;
+    color: #3dbfad;
+    cursor: pointer;
+    padding: 8px 0 0 0;
+    text-align: left;
+}
+
+.btn-ver-mas-sugerencias:hover {
+    text-decoration: underline;
+}

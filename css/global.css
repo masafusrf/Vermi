@@ -1,0 +1,262 @@
+/* estilos comunes del equipo */
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #1a2d4a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+img { display: block; max-width: 100%; }
+a   { text-decoration: none; color: inherit; }
+ul  { list-style: none; }
+
+/* Nav */
+nav.nav-principal {
+    background-color: #1a2d4a;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-inner {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav-marca {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.nav-marca img {
+    width: 36px;
+    height: 36px;
+}
+
+.nav-links {
+    margin-left: auto;
+    display: flex;
+    gap: 4px;
+}
+
+.nav-links a {
+    color: white;
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.nav-links a:hover,
+.nav-links a.activo {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Layout */
+.layout-pagina {
+    flex: 1;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 270px 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+/* Aside izquierdo */
+.aside-lateral {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.aside-bloque {
+    padding: 16px;
+    border-bottom: 1px solid #e0e3e8;
+}
+
+.aside-bloque:last-child {
+    border-bottom: none;
+}
+
+.aside-bloque h2 {
+    font-size: 0.95rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+/* Recuerdos rápidos */
+.recuerdos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+}
+
+.recuerdos-grid img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Etiquetas */
+.lista-etiquetas {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.etiqueta {
+    display: inline-block;
+    background-color: #c9960b;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.etiqueta:hover {
+    opacity: 0.85;
+}
+
+/* Sugerencias */
+.lista-sugerencias {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sugerencia {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sugerencia img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sugerencia-info {
+    flex: 1;
+}
+
+.sugerencia-info strong {
+    display: block;
+    font-size: 0.9rem;
+}
+
+.sugerencia-info span {
+    font-size: 0.78rem;
+    color: #6b7280;
+}
+
+.btn-anadir {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #6b7280;
+    padding: 4px 8px;
+}
+
+.btn-anadir:hover {
+    color: #1a2d4a;
+}
+
+/* Footer */
+footer {
+    background-color: #1a2d4a;
+    color: white;
+    padding: 24px;
+    margin-top: auto;
+}
+
+.footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 16px 0;
+}
+
+.footer-links a {
+    color: white;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+hr.footer-separador {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 12px 0;
+}
+
+/* Logo y copyright */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.footer-marca {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-marca img {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+}
+
+.footer-marca-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-marca-texto span {
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.footer-eslogan {
+    font-size: 0.78rem;
+    opacity: 0.75;
+    font-weight: normal;
+}

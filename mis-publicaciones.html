@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis publicaciones - Vermi</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/perfil.css">
+</head>
+<body>
+
+    <nav class="nav-principal" aria-label="Navegacion principal">
+        <div class="nav-inner">
+            <a href="#" class="nav-marca">
+                <img src="img/logo-test.png" alt="Logo Vermi">
+                Vermi
+            </a>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Publicar</a></li>
+                <li><a href="#">Amigos</a></li>
+                <li><a href="mis-publicaciones.html" class="activo">Mi perfil</a></li>
+                <li><a href="#">Editar perfil</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="layout-pagina">
+
+        <aside class="aside-lateral" aria-label="Panel lateral">
+
+            <section class="aside-bloque">
+                <h2>Recuerdos rapidos</h2>
+                <div class="recuerdos-grid">
+                    <img src="https://picsum.photos/seed/r1/80/80" alt="Recuerdo">
+                    <img src="https://picsum.photos/seed/r2/80/80" alt="Recuerdo">
+                    <img src="https://picsum.photos/seed/r3/80/80" alt="Recuerdo">
+                    <img src="https://picsum.photos/seed/r4/80/80" alt="Recuerdo">
+                    <img src="https://picsum.photos/seed/r5/80/80" alt="Recuerdo">
+                </div>
+            </section>
+
+            <section class="aside-bloque">
+                <h2>Etiquetas populares</h2>
+                <ul class="lista-etiquetas">
+                    <li><a href="#" class="etiqueta">#Playa</a></li>
+                    <li><a href="#" class="etiqueta">#SanJuan</a></li>
+                    <li><a href="#" class="etiqueta">#Cumpleanos</a></li>
+                    <li><a href="#" class="etiqueta">#Fiesta</a></li>
+                    <li><a href="#" class="etiqueta">#Cine</a></li>
+                </ul>
+            </section>
+
+            <section class="aside-bloque">
+                <h2>Sugerencias</h2>
+                <ul class="lista-sugerencias">
+                    <li class="sugerencia">
+                        <img src="https://picsum.photos/seed/u1/40/40" alt="Avatar Usuario001">
+                        <div class="sugerencia-info">
+                            <strong>Usuario001</strong>
+                            <span>Amigo en comun</span>
+                        </div>
+                        <button class="btn-anadir" aria-label="Seguir a Usuario001">+</button>
+                    </li>
+                    <li class="sugerencia">
+                        <img src="https://picsum.photos/seed/u2/40/40" alt="Avatar Usuario002">
+                        <div class="sugerencia-info">
+                            <strong>Usuario002</strong>
+                            <span>Amigo en comun</span>
+                        </div>
+                        <button class="btn-anadir" aria-label="Seguir a Usuario002">+</button>
+                    </li>
+                    <li class="sugerencia">
+                        <img src="https://picsum.photos/seed/u3/40/40" alt="Avatar Usuario003">
+                        <div class="sugerencia-info">
+                            <strong>Usuario003</strong>
+                            <span>Amigo en comun</span>
+                        </div>
+                        <button class="btn-anadir" aria-label="Seguir a Usuario003">+</button>
+                    </li>
+                </ul>
+                <button class="btn-ver-mas-sugerencias">Ver mas sugerencias</button>
+            </section>
+
+        </aside>
+
+        <main>
+
+            <section class="perfil-cabecera" aria-label="Perfil de usuario">
+                <img class="perfil-foto"
+                     src="https://picsum.photos/seed/miusuario/80/80"
+                     alt="Foto de perfil">
+                <h1 class="perfil-nombre">MiUsuario</h1>
+                <p class="perfil-descripcion">Amante de los recuerdos y los atardeceres.</p>
+                <div class="perfil-contadores">
+                    <div>
+                        <strong>3</strong>
+                        <span>Publicaciones</span>
+                    </div>
+                    <div>
+                        <strong>128</strong>
+                        <span>Seguidores</span>
+                    </div>
+                    <div>
+                        <strong>74</strong>
+                        <span>Siguiendo</span>
+                    </div>
+                </div>
+            </section>
+
+            <nav class="perfil-tabs" aria-label="Secciones del perfil">
+                <a href="mis-publicaciones.html" class="tab-activa">Mis publicaciones</a>
+                <a href="mis-likes.html">Likes</a>
+            </nav>
+
+            <section aria-label="Mis publicaciones">
+                <ul class="publicacion-lista">
+
+                    <li class="publicacion-card">
+                        <figure>
+                            <img src="https://picsum.photos/seed/pub1/800/400" alt="Atardecer en la playa">
+                        </figure>
+                        <div class="publicacion-autor-barra">
+                            <img class="publicacion-avatar"
+                                 src="https://picsum.photos/seed/miusuario/42/42"
+                                 alt="Mi avatar">
+                            <span class="publicacion-autor-nombre">MiUsuario</span>
+                        </div>
+                        <div class="publicacion-cuerpo">
+                            <p class="publicacion-descripcion">¡Qué atardecer más bonito!</p>
+                            <time class="publicacion-fecha" datetime="2025-02-27">27/02/2025</time>
+                            <div class="publicacion-etiquetas">
+                                <a href="#" class="etiqueta">#Arquitectura</a>
+                                <a href="#" class="etiqueta">#Atardecer</a>
+                                <button class="btn-ver-mas-etiquetas">+ ver más</button>
+                                <button class="btn-editar-etiquetas">Editar</button>
+                            </div>
+                        </div>
+                        <div class="publicacion-stats">
+                            <span class="stat-like-activo">&#9825; 12</span>
+                            <span>&#128172; 2</span>
+                            <button class="btn-accion">Compartir</button>
+                            <button class="btn-accion btn-eliminar">Eliminar</button>
+                        </div>
+                    </li>
+
+                    <li class="publicacion-card">
+                        <figure>
+                            <img src="https://picsum.photos/seed/pub2/800/400" alt="Selfie en la playa">
+                        </figure>
+                        <div class="publicacion-autor-barra">
+                            <img class="publicacion-avatar"
+                                 src="https://picsum.photos/seed/miusuario/42/42"
+                                 alt="Mi avatar">
+                            <span class="publicacion-autor-nombre">MiUsuario</span>
+                        </div>
+                        <div class="publicacion-cuerpo">
+                            <p class="publicacion-descripcion">Un día perfecto con amigos.</p>
+                            <time class="publicacion-fecha" datetime="2025-02-20">20/02/2025</time>
+                            <div class="publicacion-etiquetas">
+                                <a href="#" class="etiqueta">#SanJuan</a>
+                                <a href="#" class="etiqueta">#Fiesta</a>
+                                <button class="btn-ver-mas-etiquetas">+ ver más</button>
+                                <button class="btn-editar-etiquetas">Editar </button>
+                            </div>
+                        </div>
+                        <div class="publicacion-stats">
+                            <span class="stat-like-activo">&#9825; 46</span>
+                            <span>&#128172; 24</span>
+                            <button class="btn-accion">Compartir</button>
+                            <button class="btn-accion btn-eliminar">Eliminar</button>
+                        </div>
+                    </li>
+
+                    <li class="publicacion-card">
+                        <figure>
+                            <img src="https://picsum.photos/seed/pub3/800/400" alt="Paisaje de montaña">
+                        </figure>
+                        <div class="publicacion-autor-barra">
+                            <img class="publicacion-avatar"
+                                 src="https://picsum.photos/seed/miusuario/42/42"
+                                 alt="Mi avatar">
+                            <span class="publicacion-autor-nombre">MiUsuario</span>
+                        </div>
+                        <div class="publicacion-cuerpo">
+                            <p class="publicacion-descripcion">Recargando las pilas.</p>
+                            <time class="publicacion-fecha" datetime="2025-01-15">15/01/2025</time>
+                            <div class="publicacion-etiquetas">
+                                <a href="#" class="etiqueta">#Trabajo</a>
+                                <button class="btn-ver-mas-etiquetas">+ ver más</button>
+                                <button class="btn-editar-etiquetas">Editar </button>
+                            </div>
+                        </div>
+                        <div class="publicacion-stats">
+                            <span class="stat-like-activo">&#9825; 19</span>
+                            <span>&#128172; 5</span>
+                            <button class="btn-accion">Compartir</button>
+                            <button class="btn-accion btn-eliminar">Eliminar</button>
+                        </div>
+                    </li>
+
+                </ul>
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-inner">
+            <ul class="footer-links">
+                <li><a href="#">Sobre Vermi</a></li>
+                <li><a href="#">Contacta con nosotros</a></li>
+                <li><a href="#">Politica de privacidad</a></li>
+            </ul>
+            <hr class="footer-separador">
+            <div class="footer-bottom">
+                <div class="footer-marca">
+                    <img src="img/logo-test.png" alt="Logo Vermi">
+                    <div class="footer-marca-texto">
+                        <span>VERMI</span>
+                        <span class="footer-eslogan">Recuerda en voz alta</span>
+                    </div>
+                </div>
+                <small>&#169; Todos los derechos reservados.</small>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

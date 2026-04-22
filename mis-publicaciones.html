@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/perfil.css">
 </head>
+
 <body>
 
     <header>
@@ -26,10 +28,10 @@
 
     <div class="layout-pagina">
 
-        <aside class="aside-lateral" aria-label="Panel lateral">
+        <aside class="aside-lateral">
 
             <section class="aside-bloque">
-                <h2>Recuerdos rapidos</h2>
+                <h2>Recuerdos rápidos</h2>
                 <div class="recuerdos-grid">
                     <img src="https://picsum.photos/seed/r1/80/80" alt="Recuerdo">
                     <img src="https://picsum.photos/seed/r2/80/80" alt="Recuerdo">
@@ -57,7 +59,7 @@
                         <img src="https://picsum.photos/seed/u1/40/40" alt="Avatar Usuario001">
                         <div class="sugerencia-info">
                             <strong>Usuario001</strong>
-                            <span>Amigo en comun</span>
+                            <span>Amigo en común</span>
                         </div>
                         <button class="btn-anadir" aria-label="Seguir a Usuario001">+</button>
                     </li>
@@ -65,7 +67,7 @@
                         <img src="https://picsum.photos/seed/u2/40/40" alt="Avatar Usuario002">
                         <div class="sugerencia-info">
                             <strong>Usuario002</strong>
-                            <span>Amigo en comun</span>
+                            <span>Amigo en común</span>
                         </div>
                         <button class="btn-anadir" aria-label="Seguir a Usuario002">+</button>
                     </li>
@@ -73,22 +75,20 @@
                         <img src="https://picsum.photos/seed/u3/40/40" alt="Avatar Usuario003">
                         <div class="sugerencia-info">
                             <strong>Usuario003</strong>
-                            <span>Amigo en comun</span>
+                            <span>Amigo en común</span>
                         </div>
                         <button class="btn-anadir" aria-label="Seguir a Usuario003">+</button>
                     </li>
                 </ul>
-                <button class="btn-ver-mas-sugerencias">Ver mas sugerencias</button>
+                <button class="btn-ver-mas-sugerencias">Ver más sugerencias</button>
             </section>
 
         </aside>
 
         <main>
 
-            <section class="perfil-cabecera" aria-label="Perfil de usuario">
-                <img class="perfil-foto"
-                     src="https://picsum.photos/seed/miusuario/80/80"
-                     alt="Foto de perfil">
+            <section class="perfil-cabecera">
+                <img class="perfil-foto" src="https://picsum.photos/seed/miusuario/80/80" alt="Foto de perfil">
                 <h1 class="perfil-nombre">MiUsuario</h1>
                 <p class="perfil-descripcion">Amante de los recuerdos y los atardeceres.</p>
                 <div class="perfil-contadores">
@@ -108,12 +108,12 @@
                 <a href="editarPerfil.html" class="btn-editar-perfil">Editar perfil</a>
             </section>
 
-            <nav class="perfil-tabs" aria-label="Secciones del perfil">
+            <nav class="perfil-tabs">
                 <a href="mis-publicaciones.html" class="tab-activa">Mis publicaciones</a>
                 <a href="mis-likes.html">Likes</a>
             </nav>
 
-            <section aria-label="Mis publicaciones">
+            <section>
                 <ul class="publicacion-lista">
 
                     <li class="publicacion-card">
@@ -121,9 +121,8 @@
                             <img src="https://picsum.photos/seed/pub1/800/400" alt="Atardecer en la playa">
                         </figure>
                         <div class="publicacion-autor-barra">
-                            <img class="publicacion-avatar"
-                                 src="https://picsum.photos/seed/miusuario/42/42"
-                                 alt="Mi avatar">
+                            <img class="publicacion-avatar" src="https://picsum.photos/seed/miusuario/42/42"
+                                alt="Mi avatar">
                             <span class="publicacion-autor-nombre">MiUsuario</span>
                         </div>
                         <div class="publicacion-cuerpo">
@@ -136,23 +135,23 @@
                                 <button class="btn-editar-etiquetas">Editar</button>
                             </div>
                         </div>
-                        <!-- seccion likes / comentarios / compartir CON SVG-->
+                        <!--seccion likes / comentarios / compartir CON SVG-->
                         <div class="publicacion-stats">
                             <button class="btn-stat btn-like" aria-label="Me gusta">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                                    <path d="M12 21C12 21 3 13.5 3 8a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.5-9 13-9 13z"/>
+                                    <path d="M12 21C12 21 3 13.5 3 8a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.5-9 13-9 13z" />
                                 </svg>
                                 <span>12</span>
                             </button>
                             <button class="btn-stat btn-comentar" aria-label="Comentar">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
                                 </svg>
                                 <span>2</span>
                             </button>
                             <button class="btn-stat btn-compartir" aria-label="Compartir">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8M16 6l-4-4-4 4M12 2v13"/>
+                                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8M16 6l-4-4-4 4M12 2v13" />
                                 </svg>
                             </button>
                         </div>
@@ -163,9 +162,8 @@
                             <img src="https://picsum.photos/seed/pub2/800/400" alt="Selfie en la playa">
                         </figure>
                         <div class="publicacion-autor-barra">
-                            <img class="publicacion-avatar"
-                                 src="https://picsum.photos/seed/miusuario/42/42"
-                                 alt="Mi avatar">
+                            <img class="publicacion-avatar" src="https://picsum.photos/seed/miusuario/42/42"
+                                alt="Mi avatar">
                             <span class="publicacion-autor-nombre">MiUsuario</span>
                         </div>
                         <div class="publicacion-cuerpo">
@@ -178,23 +176,23 @@
                                 <button class="btn-editar-etiquetas">Editar </button>
                             </div>
                         </div>
-                        <!-- seccion likes / comentarios / compartir CON SVG-->
+                        <!--seccion likes / comentarios / compartir CON SVG-->
                         <div class="publicacion-stats">
                             <button class="btn-stat btn-like" aria-label="Me gusta">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                                    <path d="M12 21C12 21 3 13.5 3 8a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.5-9 13-9 13z"/>
+                                    <path d="M12 21C12 21 3 13.5 3 8a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.5-9 13-9 13z" />
                                 </svg>
                                 <span>12</span>
                             </button>
                             <button class="btn-stat btn-comentar" aria-label="Comentar">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
                                 </svg>
                                 <span>2</span>
                             </button>
                             <button class="btn-stat btn-compartir" aria-label="Compartir">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8M16 6l-4-4-4 4M12 2v13"/>
+                                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8M16 6l-4-4-4 4M12 2v13" />
                                 </svg>
                             </button>
                         </div>
@@ -205,9 +203,8 @@
                             <img src="https://picsum.photos/seed/pub3/800/400" alt="Paisaje de montaña">
                         </figure>
                         <div class="publicacion-autor-barra">
-                            <img class="publicacion-avatar"
-                                 src="https://picsum.photos/seed/miusuario/42/42"
-                                 alt="Mi avatar">
+                            <img class="publicacion-avatar" src="https://picsum.photos/seed/miusuario/42/42"
+                                alt="Mi avatar">
                             <span class="publicacion-autor-nombre">MiUsuario</span>
                         </div>
                         <div class="publicacion-cuerpo">
@@ -219,23 +216,23 @@
                                 <button class="btn-editar-etiquetas">Editar </button>
                             </div>
                         </div>
-                        <!-- seccion likes / comentarios / compartir CON SVG-->
+                        <!--seccion likes / comentarios / compartir CON SVG-->
                         <div class="publicacion-stats">
                             <button class="btn-stat btn-like" aria-label="Me gusta">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                                    <path d="M12 21C12 21 3 13.5 3 8a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.5-9 13-9 13z"/>
+                                    <path d="M12 21C12 21 3 13.5 3 8a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.5-9 13-9 13z" />
                                 </svg>
                                 <span>12</span>
                             </button>
                             <button class="btn-stat btn-comentar" aria-label="Comentar">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
                                 </svg>
                                 <span>2</span>
                             </button>
                             <button class="btn-stat btn-compartir" aria-label="Compartir">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8M16 6l-4-4-4 4M12 2v13"/>
+                                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8M16 6l-4-4-4 4M12 2v13" />
                                 </svg>
                             </button>
                         </div>
@@ -255,7 +252,7 @@
         </div>
 
         <div id="logoYCopyFooter">
-            <img src="assets/vermiLogo.png" alt="" srcset="">
+            <img src="assets/vermiLogo.png" alt="logo">
             <div id="textoLogo">
                 <p>VERMI</p>
                 <p>Recuerda en voz alta</p>
@@ -265,4 +262,5 @@
     </footer>
 
 </body>
+
 </html>

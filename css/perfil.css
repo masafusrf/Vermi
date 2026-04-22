@@ -1,4 +1,4 @@
-/* layout general - viene de global.css */
+/*layout general*/
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: Arial, sans-serif; background-color: #f0f2f5; color: #1a2d4a; min-height: 100vh; display: flex; flex-direction: column; }
 img { display: block; max-width: 100%; }
@@ -16,9 +16,7 @@ ul { list-style: none; }
     align-items: start;
 }
 
-/* perfil.css - mis vistas */
-
-/* Cabecera del perfil */
+/*cabecera perfil*/
 .perfil-cabecera {
     background-color: white;
     border-radius: 6px;
@@ -49,7 +47,7 @@ ul { list-style: none; }
     color: #6b7280;
 }
 
-/* Contadores */
+/*contadores*/
 .perfil-contadores {
     display: flex;
     gap: 24px;
@@ -71,7 +69,7 @@ ul { list-style: none; }
     color: #6b7280;
 }
 
-/* Pestañas */
+/*pestañas*/
 .perfil-tabs {
     display: flex;
     margin-bottom: 20px;
@@ -96,7 +94,7 @@ ul { list-style: none; }
     font-weight: bold;
 }
 
-/* Lista de publicaciones */
+/*publicaciones*/
 .publicacion-lista {
     display: flex;
     flex-direction: column;
@@ -120,7 +118,7 @@ ul { list-style: none; }
     object-fit: cover;
 }
 
-/* Autor: avatar + nombre + Seguir */
+/*avatar, nombre, seguir*/
 .publicacion-autor-barra {
     display: flex;
     align-items: center;
@@ -142,7 +140,7 @@ ul { list-style: none; }
     font-weight: bold;
 }
 
-/* Botón seguir */
+/*botones*/
 .btn-seguir, .btn-editar-perfil {
     background-color: #3dbfad;
     color: white;
@@ -155,7 +153,6 @@ ul { list-style: none; }
     background-color: #5ecbbc;
 }
 
-/* Botón editar perfil */
 .btn-editar-perfil {
     margin-top: 8px;
     background-color: #1a2d4a;
@@ -164,7 +161,7 @@ ul { list-style: none; }
     background-color: #395279;
 }
 
-/* Descripción, fecha y etiquetas */
+/*descrip, fecha, etiquetas*/
 .publicacion-cuerpo {
     padding: 12px 16px;
 }
@@ -213,7 +210,7 @@ ul { list-style: none; }
     margin-left: auto;
 }
 
-/* Stats y acciones en una fila */
+/*stats y acciones*/
 .publicacion-stats {
     display: flex;
     border-top: 1px solid #e0e3e8;
@@ -251,7 +248,7 @@ ul { list-style: none; }
     color: #e05a5a;
 }
 
-/* Ver más sugerencias */
+/*otros*/
 .btn-ver-mas-sugerencias {
     display: block;
     width: 100%;

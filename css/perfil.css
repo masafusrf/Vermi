@@ -134,7 +134,7 @@
     font-size: 0.85rem;
 }
 .btn-seguir:hover {
-    background-color: #3dbfaed2;
+    background-color: #5ecbbc;
 }
 
 /* Botón editar perfil */
@@ -143,7 +143,7 @@
     background-color: #1a2d4a;
 }
 .btn-editar-perfil:hover {
-    background-color: #1a284ad4;
+    background-color: #395279;
 }
 
 /* Descripción, fecha y etiquetas */

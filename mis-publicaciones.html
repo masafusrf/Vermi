@@ -46,7 +46,7 @@
                 <ul class="lista-etiquetas">
                     <li><a href="#" class="etiqueta">#Playa</a></li>
                     <li><a href="#" class="etiqueta">#SanJuan</a></li>
-                    <li><a href="#" class="etiqueta">#Cumpleanos</a></li>
+                    <li><a href="#" class="etiqueta">#Cumpleaños</a></li>
                     <li><a href="#" class="etiqueta">#Fiesta</a></li>
                     <li><a href="#" class="etiqueta">#Cine</a></li>
                 </ul>
@@ -61,7 +61,7 @@
                             <strong>Usuario001</strong>
                             <span>Amigo en común</span>
                         </div>
-                        <button class="btn-anadir" aria-label="Seguir a Usuario001">+</button>
+                        <button class="btn-anadir">+</button>
                     </li>
                     <li class="sugerencia">
                         <img src="https://picsum.photos/seed/u2/40/40" alt="Avatar Usuario002">
@@ -69,7 +69,7 @@
                             <strong>Usuario002</strong>
                             <span>Amigo en común</span>
                         </div>
-                        <button class="btn-anadir" aria-label="Seguir a Usuario002">+</button>
+                        <button class="btn-anadir">+</button>
                     </li>
                     <li class="sugerencia">
                         <img src="https://picsum.photos/seed/u3/40/40" alt="Avatar Usuario003">
@@ -77,7 +77,7 @@
                             <strong>Usuario003</strong>
                             <span>Amigo en común</span>
                         </div>
-                        <button class="btn-anadir" aria-label="Seguir a Usuario003">+</button>
+                        <button class="btn-anadir">+</button>
                     </li>
                 </ul>
                 <button class="btn-ver-mas-sugerencias">Ver más sugerencias</button>
@@ -124,6 +124,7 @@
                             <img class="publicacion-avatar" src="https://picsum.photos/seed/miusuario/42/42"
                                 alt="Mi avatar">
                             <span class="publicacion-autor-nombre">MiUsuario</span>
+                            <span class="visibilidad publica">●</span> <!-- doble clase para estilos base + especificos -->
                         </div>
                         <div class="publicacion-cuerpo">
                             <p class="publicacion-descripcion">¡Qué atardecer más bonito!</p>
@@ -137,19 +138,19 @@
                         </div>
                         <!--seccion likes / comentarios / compartir CON SVG-->
                         <div class="publicacion-stats">
-                            <button class="btn-stat btn-like" aria-label="Me gusta">
+                            <button class="btn-stat btn-like">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
                                     <path d="M12 21C12 21 3 13.5 3 8a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.5-9 13-9 13z" />
                                 </svg>
                                 <span>12</span>
                             </button>
-                            <button class="btn-stat btn-comentar" aria-label="Comentar">
+                            <button class="btn-stat btn-comentar">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
                                     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
                                 </svg>
                                 <span>2</span>
                             </button>
-                            <button class="btn-stat btn-compartir" aria-label="Compartir">
+                            <button class="btn-stat btn-compartir">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
                                     <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8M16 6l-4-4-4 4M12 2v13" />
                                 </svg>
@@ -165,6 +166,7 @@
                             <img class="publicacion-avatar" src="https://picsum.photos/seed/miusuario/42/42"
                                 alt="Mi avatar">
                             <span class="publicacion-autor-nombre">MiUsuario</span>
+                            <span class="visibilidad amigos">●</span>
                         </div>
                         <div class="publicacion-cuerpo">
                             <p class="publicacion-descripcion">Un día perfecto con amigos.</p>
@@ -178,19 +180,19 @@
                         </div>
                         <!--seccion likes / comentarios / compartir CON SVG-->
                         <div class="publicacion-stats">
-                            <button class="btn-stat btn-like" aria-label="Me gusta">
+                            <button class="btn-stat btn-like">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
                                     <path d="M12 21C12 21 3 13.5 3 8a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.5-9 13-9 13z" />
                                 </svg>
                                 <span>12</span>
                             </button>
-                            <button class="btn-stat btn-comentar" aria-label="Comentar">
+                            <button class="btn-stat btn-comentar">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
                                     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
                                 </svg>
                                 <span>2</span>
                             </button>
-                            <button class="btn-stat btn-compartir" aria-label="Compartir">
+                            <button class="btn-stat btn-compartir">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
                                     <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8M16 6l-4-4-4 4M12 2v13" />
                                 </svg>
@@ -206,6 +208,7 @@
                             <img class="publicacion-avatar" src="https://picsum.photos/seed/miusuario/42/42"
                                 alt="Mi avatar">
                             <span class="publicacion-autor-nombre">MiUsuario</span>
+                            <span class="visibilidad privada">●</span>
                         </div>
                         <div class="publicacion-cuerpo">
                             <p class="publicacion-descripcion">Recargando las pilas.</p>
@@ -218,19 +221,19 @@
                         </div>
                         <!--seccion likes / comentarios / compartir CON SVG-->
                         <div class="publicacion-stats">
-                            <button class="btn-stat btn-like" aria-label="Me gusta">
+                            <button class="btn-stat btn-like">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
                                     <path d="M12 21C12 21 3 13.5 3 8a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.5-9 13-9 13z" />
                                 </svg>
                                 <span>12</span>
                             </button>
-                            <button class="btn-stat btn-comentar" aria-label="Comentar">
+                            <button class="btn-stat btn-comentar">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
                                     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
                                 </svg>
                                 <span>2</span>
                             </button>
-                            <button class="btn-stat btn-compartir" aria-label="Compartir">
+                            <button class="btn-stat btn-compartir">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
                                     <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8M16 6l-4-4-4 4M12 2v13" />
                                 </svg>

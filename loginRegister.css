@@ -130,7 +130,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    padding: 0 20px;
+    padding:  20px;
 }
 
 /* HEADER (Interno) */
@@ -150,7 +150,12 @@ header {
 .headerIzquierdo img {
     width: 3rem;
 }
-
+.headerIzquierdo {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente si es necesario */
+    flex: 1;                 /* Opcional: permite que ocupe todo el espacio disponible */
+}
 /* HEADER (central) */
 .headerCentral ul {
     display: flex;
@@ -166,12 +171,16 @@ header nav ul li a {
     color: inherit;
 }
 
-
+.logoNav{
+    align-items: center;
+    justify-content: center;
+}
 /* footer */
 
 footer{
     background-color: #163A5F;
     color: aliceblue;
+    padding-top: 20px;
 }
 
 #paginasFooter{
@@ -188,13 +197,13 @@ footer{
 
 #logoYCopyFooter{
     display: flex;
+    justify-content: space-around;
     margin-top: 120px;
-    margin-left: 100px;
     padding-bottom: 80px;
 }
 
 #textoLogo{
-    margin-left: 25px;
+    margin-left: -80px;
 }
 
 #logoYCopyFooter img{
@@ -215,8 +224,4 @@ footer{
     height: 2px;
     background-color: aliceblue;
     transition: width 0.3s ease;
-}
-
-#paginasFooter a:hover::after {
-    width: 100%;
 }

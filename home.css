@@ -40,7 +40,7 @@
 }
 ###################################################*/
 /* Estilo común para todas las tarjetas */
-.tarjeta-fija, .publicacion {
+.tarjeta-fija {
     background: white;
     border-radius: 8px;
     padding: 15px;
@@ -54,36 +54,6 @@
     margin-top: 0px;
 }
 
-/* Publicaciones */
-.publicacion .cabecera-post {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-.foto-perfil {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    object-fit: cover; /*llena el contenedor con la imagen 
-                        aunque tenga que recortarla*/
-}
-
-.nombre-usuario {
-    font-weight: bold;
-    display: block;
-}
-
-.fecha {
-    color: rgb(151, 151, 151);
-}
-
-.imagen-post {
-    width: 100%;
-    border-radius: 8px;
-    margin-top: 10px;
-}
 
 /* Recuerdos rapidos (Grid para las fotos pequeñas) */
 .recuerdos-rapidos {
@@ -127,6 +97,11 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
+}
+
+.foto-perfil {
+    border-radius: 50%;
+    object-fit: cover;      /* recorta sin deformar, llenando el espacio */
 }
 
 .persona-sugerida .foto-perfil {  /*limitar tamaño de las fotos 

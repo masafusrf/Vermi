@@ -33,9 +33,9 @@
     position: absolute;
     top: 60px;
     right: 0px;
-    background-color: #fdeaea;  
-    color: #c65b5b;
-    border: 1.5px solid #c65b5b;
+    background-color: #e6e6e6;  
+    color: #8c8c8c;
+    border: 1.5px solid #8c8c8c;
 }
 
 #cambiarFoto {
@@ -91,9 +91,9 @@ textarea{
 }
 
 #cancelar{
-    background-color: #fdeaea;  
-    color: #c65b5b;
-    border: 1.5px solid #c65b5b;
+    background-color: #e6e6e6;  
+    color: #8c8c8c;
+    border: 1.5px solid #8c8c8c;
 }
 
 #guardar{
@@ -117,12 +117,12 @@ textarea{
 }
 
 #eliminarFoto:hover {
-    background-color: #c65b5b;
+    background-color: #8c8c8cb2;  
     color: white;
 }
 
 #cancelar:hover{
-    background-color: #c65b5b;
+    background-color: #8c8c8cb2;  
     color: white;
 }
 
@@ -132,17 +132,17 @@ textarea{
 }
 
 #cancelar:active{
-    background-color: #cb3333;
+    background-color: #6e6e6eb2;  
 }
 
 #guardar:active{
-    background-color: #2a80d0;
+    background-color: #2266a5;
 }
 
 #eliminarFoto:active{
-    background-color: #cb3333;
+    background-color: #6e6e6eb2;  
 }
 
 #cambiarFoto:active{
-    background-color: #2a80d0;
+    background-color: #2266a5
 }

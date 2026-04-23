@@ -44,9 +44,9 @@ select {
 }
 
 #cancelar {
-    background-color: #fdeaea;  
-    color: #c65b5b;
-    border: 1.5px solid #c65b5b;
+    background-color: #e6e6e6;  
+    color: #8c8c8c;
+    border: 1.5px solid #8c8c8c;
 }
 
 #guardar {
@@ -61,7 +61,7 @@ select {
 /* pseudoclases */
 
 #cancelar:hover {
-    background-color: #c65b5b;
+    background-color: #8c8c8cb2;  
     color: white;
 }
 
@@ -71,9 +71,9 @@ select {
 }
 
 #cancelar:active {
-    background-color: #cb3333;
+    background-color: #6e6e6eb2;  
 }
 
 #guardar:active {
-    background-color: #2a80d0;
+    background-color: #2266a5
 }

@@ -5,17 +5,6 @@ img { display: block; max-width: 100%; }
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 
-.layout-pagina {
-    flex: 1;
-    max-width: 1100px;
-    margin: 20px auto;
-    padding: 0 20px;
-    display: grid;
-    grid-template-columns: 270px 1fr;
-    gap: 20px;
-    align-items: start;
-}
-
 /*cabecera perfil*/
 .perfil-cabecera {
     background-color: white;
@@ -248,22 +237,6 @@ ul { list-style: none; }
 
 .btn-like.activo {
     color: #e05a5a;
-}
-
-/* mostrar más */
-.btn-ver-mas-sugerencias {
-    display: block;
-    width: 100%;
-    background: none;
-    border: none;
-    font-size: 0.82rem;
-    color: #3dbfad;
-    padding: 8px 0 0 0;
-    text-align: left;
-}
-
-.btn-ver-mas-sugerencias:hover {
-    text-decoration: underline;
 }
 
 /* visibilidad publicación */

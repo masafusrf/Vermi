@@ -73,8 +73,9 @@ input.user:focus, input.password:focus {
 }
 
 button {
-    background-color: #2ea09b; 
-    color: white;
+    background-color: #eaedfd; 
+    border: 1.5px solid #5b92c6;
+    color: #5b92c6;
     border: none;
     padding: 12px;
     border-radius: 4px;
@@ -87,9 +88,11 @@ button {
 }
 
 button:hover {
-    background-color: #258581;
+    background-color: #4a7fb0;
 }
-
+button:active {
+    background-color: #2a80d0;
+}
 p.registro {
     color: #666;
     font-size: 0.85rem;
@@ -98,7 +101,7 @@ p.registro {
 }
 
 p.registro a {
-    color: #2ea09b;
+    color: #4a7fb0;
     text-decoration: none;
     font-weight: bold;
 }
@@ -106,7 +109,7 @@ p.registro a {
 footer {
     background-color: #1b3a57;
     color: #aaa;
-    text-align: center;
+    text-align: left;
     padding: 30px;
     margin-top: auto;
     font-size: 0.8rem;
@@ -180,7 +183,6 @@ header nav ul li a {
 footer{
     background-color: #163A5F;
     color: aliceblue;
-    padding-top: 20px;
 }
 
 #paginasFooter{
@@ -224,4 +226,8 @@ footer{
     height: 2px;
     background-color: aliceblue;
     transition: width 0.3s ease;
+}
+
+#paginasFooter a:hover::after {
+    width: 100%;
 }

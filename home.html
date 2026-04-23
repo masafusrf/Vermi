@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar perfil</title>
-    <link rel="stylesheet" href="home.css">
+    <title>Home - Vermi</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="assets/vermiLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="home.css">
 </head>
+
 <body>
+
     <header>
         <div class="headerIzquierdo">
             <img src="assets/vermiLogo.png" alt="Logotipo Vermi" class="logoNav">
@@ -16,77 +18,203 @@
         </div>
         <nav class="headerCentral">
             <ul>
-                <li><a href="home.html">Inicio</a></li>
+                <li><a href="#">Inicio</a></li>
                 <li><a href="publicar.html">Publicar</a></li>
-                <li><a href="amigos.html">Amigos</a></li>
+                <li><a href="#">Amigos</a></li>
                 <li><a href="#">Mi perfil</a></li>
             </ul>
         </nav>
     </header>
 
+    <div class="layout-pagina">
 
-    <main class="contenedor-principal">
-    
-    <aside id="columna-izquierda">
-        <section class="tarjeta-fija">
-            <h3>Recuerdos rápidos</h3>
-            <div class="recuerdos-rapidos">
-                <a href="#"><img src="assets/AA_Recuerdo_1.png" alt="Recuerdo"></a>
-                <a href="#"><img src="assets/AA_Recuerdo_2.png" alt="Recuerdo"></a>
-                <a href="#"><img src="assets/AA_Recuerdo_3.png" alt="Recuerdo"></a>
-                <a href="#"><img src="assets/AA_Recuerdo_4.png" alt="Recuerdo"></a>
-                <a href="#"><img src="assets/AA_Recuerdo_5.png" alt="Recuerdo"></a>
-            </div>
-        </section>
+        <aside class="aside-lateral">
 
-        <section class="tarjeta-fija">
-            <h3>Etiquetas populares</h3>
-            <div class="lista-etiquetas">
-                <a href="#" class="boton-etiqueta">#Verano</a>
-                <a href="#" class="boton-etiqueta">#Comida</a>
-                <a href="#" class="boton-etiqueta">#Photooftheday</a>
-                <a href="#" class="boton-etiqueta">#Musica</a>
-                <a href="#" class="boton-etiqueta">#Vermi</a>
-                <a href="#" class="boton-etiqueta">#SanJuan</a>
-                <a href="#" class="boton-etiqueta">#Fallas</a>
-                <a href="#" class="boton-etiqueta">#Viajes</a>
-            </div>
-        </section>
-    </aside>
+            <section class="aside-bloque">
+                <h2>Recuerdos rápidos</h2>
+                <div class="recuerdos-grid">
+                    <img src="https://picsum.photos/seed/r1/80/80" alt="Recuerdo">
+                    <img src="https://picsum.photos/seed/r2/80/80" alt="Recuerdo">
+                    <img src="https://picsum.photos/seed/r3/80/80" alt="Recuerdo">
+                    <img src="https://picsum.photos/seed/r4/80/80" alt="Recuerdo">
+                    <img src="https://picsum.photos/seed/r5/80/80" alt="Recuerdo">
+                </div>
+            </section>
 
-    <section id="columna-central">
-        
-    </section>
+            <section class="aside-bloque">
+                <h2>Etiquetas populares</h2>
+                <ul class="lista-etiquetas">
+                    <li><a href="#" class="etiqueta">#Playa</a></li>
+                    <li><a href="#" class="etiqueta">#SanJuan</a></li>
+                    <li><a href="#" class="etiqueta">#Cumpleaños</a></li>
+                    <li><a href="#" class="etiqueta">#Fiesta</a></li>
+                    <li><a href="#" class="etiqueta">#Cine</a></li>
+                </ul>
+            </section>
 
-    <aside id="columna-derecha">
-        <section class="tarjeta-fija">
-            <h3>Sugerencias</h3>
-            <div class="persona-sugerida">
-                <a href="#">
-                    <img src="assets/Ana Lopez.png" class="foto-perfil">
-                    <span>Ana López</span>
-                </a>
-                <button class="boton-seguir">Seguir</button>
-            </div>
-            <div class="persona-sugerida">
-                <a href="#">
-                    <img src="assets/Pedro Marmol.png" class="foto-perfil">
-                    <span>Pedro Marmol</span>
-                </a>
-                <button class="boton-seguir">Seguir</button>
-            </div>
-            <div class="persona-sugerida">
-                <a href="#">
-                    <img src="assets/Laura Sol.png" class="foto-perfil">
-                    <span>Laura Sol</span>
-                </a>
-                <button class="boton-seguir">Seguir</button>
-            </div>
-        </section>
-    </aside>
+            <section class="aside-bloque">
+                <h2>Sugerencias</h2>
+                <ul class="lista-sugerencias">
+                    <li class="sugerencia">
+                        <img src="https://picsum.photos/seed/u1/40/40" alt="Avatar Usuario001">
+                        <div class="sugerencia-info">
+                            <strong>Usuario001</strong>
+                            <span>Amigo en común</span>
+                        </div>
+                        <button class="btn-anadir">+</button>
+                    </li>
+                    <li class="sugerencia">
+                        <img src="https://picsum.photos/seed/u2/40/40" alt="Avatar Usuario002">
+                        <div class="sugerencia-info">
+                            <strong>Usuario002</strong>
+                            <span>Amigo en común</span>
+                        </div>
+                        <button class="btn-anadir">+</button>
+                    </li>
+                    <li class="sugerencia">
+                        <img src="https://picsum.photos/seed/u3/40/40" alt="Avatar Usuario003">
+                        <div class="sugerencia-info">
+                            <strong>Usuario003</strong>
+                            <span>Amigo en común</span>
+                        </div>
+                        <button class="btn-anadir">+</button>
+                    </li>
+                </ul>
+                <button class="btn-ver-mas-sugerencias">Ver más sugerencias</button>
+            </section>
 
-</main>
+        </aside>
 
+        <main>
+            <section>
+                <ul class="publicacion-lista">
+
+                    <li class="publicacion-card">
+                        <figure>
+                            <img src="assets/AB_Publi1.png" alt="Atardecer en el mar">
+                        </figure>
+                        <div class="publicacion-autor-barra">
+                            <img class="publicacion-avatar" src="assets/Laura Sol.png"
+                                alt="Avatar Usuario032">
+                            <span class="publicacion-autor-nombre">Usuario032</span>
+                            <button class="btn-seguir">Seguir</button>
+                        </div>
+                        <div class="publicacion-cuerpo">
+                            <p class="publicacion-descripcion">Comidita rica.</p>
+                            <time class="publicacion-fecha" datetime="2025-02-27">27/02/2025</time>
+                            <div class="publicacion-etiquetas">
+                                <a href="#" class="etiqueta">#Comida</a>
+                                <a href="#" class="etiqueta">#Atardecer</a>
+                                <button class="btn-ver-mas-etiquetas">+ ver más</button>
+                            </div>
+                        </div>
+                        <!-- seccion likes / comentarios / compartir CON SVG-->
+                        <div class="publicacion-stats">
+                            <button class="btn-stat btn-like activo">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <path d="M12 21C12 21 3 13.5 3 8a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.5-9 13-9 13z" />
+                                </svg>
+                                <span>12</span>
+                            </button>
+                            <button class="btn-stat btn-comentar">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                                </svg>
+                                <span>2</span>
+                            </button>
+                            <button class="btn-stat btn-compartir">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8M16 6l-4-4-4 4M12 2v13" />
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="publicacion-card">
+                        <figure>
+                            <img src="https://picsum.photos/seed/like2/800/400" alt="Selfie de viaje">
+                        </figure>
+                        <div class="publicacion-autor-barra">
+                            <img class="publicacion-avatar" src="https://picsum.photos/seed/u5/42/42"
+                                alt="Avatar Usuario017">
+                            <span class="publicacion-autor-nombre">Usuario017</span>
+                            <button class="btn-seguir">Seguir</button>
+                        </div>
+                        <div class="publicacion-cuerpo">
+                            <p class="publicacion-descripcion">De aventura por las costas del norte.</p>
+                            <time class="publicacion-fecha" datetime="2025-02-20">20/02/2025</time>
+                            <div class="publicacion-etiquetas">
+                                <a href="#" class="etiqueta">#Viaje</a>
+                                <a href="#" class="etiqueta">#Naturaleza</a>
+                                <button class="btn-ver-mas-etiquetas">+ ver más</button>
+                            </div>
+                        </div>
+                        <!-- seccion likes / comentarios / compartir CON SVG-->
+                        <div class="publicacion-stats">
+                            <button class="btn-stat btn-like activo">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <path d="M12 21C12 21 3 13.5 3 8a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.5-9 13-9 13z" />
+                                </svg>
+                                <span>12</span>
+                            </button>
+                            <button class="btn-stat btn-comentar">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                                </svg>
+                                <span>2</span>
+                            </button>
+                            <button class="btn-stat btn-compartir">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8M16 6l-4-4-4 4M12 2v13" />
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="publicacion-card">
+                        <figure>
+                            <img src="https://picsum.photos/seed/like3/800/400" alt="Paisaje de montaña">
+                        </figure>
+                        <div class="publicacion-autor-barra">
+                            <img class="publicacion-avatar" src="https://picsum.photos/seed/u6/42/42"
+                                alt="Avatar Usuario009">
+                            <span class="publicacion-autor-nombre">Usuario009</span>
+                            <button class="btn-seguir">Seguir</button>
+                        </div>
+                        <div class="publicacion-cuerpo">
+                            <p class="publicacion-descripcion">Una foto de mi ciudad.</p>
+                            <time class="publicacion-fecha" datetime="2025-01-15">15/01/2025</time>
+                            <div class="publicacion-etiquetas">
+                                <a href="#" class="etiqueta">#Fotografia</a>
+                                <button class="btn-ver-mas-etiquetas">+ ver más</button>
+                            </div>
+                        </div>
+                        <!-- seccion likes / comentarios / compartir CON SVG-->
+                        <div class="publicacion-stats">
+                            <button class="btn-stat btn-like activo">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <path d="M12 21C12 21 3 13.5 3 8a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.5-9 13-9 13z" />
+                                </svg>
+                                <span>12</span>
+                            </button>
+                            <button class="btn-stat btn-comentar">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                                </svg>
+                                <span>2</span>
+                            </button>
+                            <button class="btn-stat btn-compartir">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8M16 6l-4-4-4 4M12 2v13" />
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+        </main>
+    </div>
 
     <footer>
         <div id="paginasFooter">
@@ -96,13 +224,17 @@
         </div>
 
         <div id="logoYCopyFooter">
-            <img src="assets/vermiLogo.png" alt="" srcset="">
-            <div id="textoLogo">
-                <p>VERMI</p>
-                <p>Recuerda en voz alta</p>
+            <div class="Logo-eslogan-footer">
+                <img src="assets/vermiLogo.png" alt="logo" id="logo-footer">
+                <div id="textoLogo">
+                    <p>VERMI</p>
+                    <p>Recuerda en voz alta</p>
+                </div>
             </div>
             <p>© Todos los derechos reservados.</p>
         </div>
     </footer>
+
 </body>
+
 </html>

@@ -8,24 +8,6 @@
     <link rel="stylesheet" href="editarPerfil.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="assets/vermiLogo.png" type="image/x-icon">
-    <style>
-        .pagina, .paginaActual {
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .paginaActual{
-            background-color: #eaedfd; 
-            color: #163A5F; 
-            border-radius: 5px; 
-            padding: 10px;
-        }
-        .pagina:hover{
-            background-color: #eaedfd; 
-            color: #163A5F; 
-            border-radius: 5px; 
-            padding: 10px;
-        }
-    </style>
 </head>
 
 <body>
@@ -53,17 +35,18 @@
         <div id="fotoPerfil">
             <img id="foto" src="" alt="Foto de perfil" width="150" height="150"
                 onerror="this.src='assets/vermiLogo.png';"><br>
+                <!-- por defecto, tendrá esta foto de perfil -->
 
             <div id="botonesFoto">
-                <button id="cambiarFoto" type="submit" name="accion" value="cambiar">Cambiar foto</button>
+                <button id="cambiarFoto" type="submit">Cambiar foto</button>
 
-                <button id="eliminarFoto" type="submit" name="accion" value="eliminar">Eliminar foto</button>
+                <button id="eliminarFoto" type="submit">Eliminar foto</button>
             </div>
         </div>
 
         <div id="nombres">
             <h2>Jose</h2>
-            <h4>Me gusta la fontanería, el aceite de motor y levantar mucho peso en el gym💪. También disfruto aprendiendo cosas prácticas y mejorando cada día con el trabajo y el esfuerzo. </h4>
+            <h4>Me gusta la fontanería, el aceite de motor y levantar mucho peso en el gym💪. También disfruto aprendiendo cosas prácticas y mejorando cada día con trabajo y esfuerzo. </h4>
         </div>
 
         <form id="formDatos" action="" method="post">
@@ -95,10 +78,12 @@
         </div>
 
         <div id="logoYCopyFooter">
-            <img src="assets/vermiLogo.png" alt="" srcset="">
-            <div id="textoLogo">
-                <p>VERMI</p>
-                <p>Recuerda en voz alta</p>
+            <div class="Logo-eslogan-footer">
+                <img src="assets/vermiLogo.png" alt="logo" id="logo-footer">
+                <div id="textoLogo">
+                    <p>VERMI</p>
+                    <p>Recuerda en voz alta</p>
+                </div>
             </div>
             <p>© Todos los derechos reservados.</p>
         </div>

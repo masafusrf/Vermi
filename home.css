@@ -207,6 +207,7 @@ ul { list-style: none; }
 .btn-ver-mas-etiquetas:hover,
 .btn-editar-etiquetas:hover {
     color: #1a2d4a;
+    cursor: pointer;
 }
 
 .btn-editar-etiquetas {

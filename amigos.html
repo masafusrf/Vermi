@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amigos - Vermi</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="amigos.css">   
+    <link rel="shortcut icon" href="assets/vermiLogo.png" type="image/x-icon">
 </head>
-
 <body>
 
     <header>
@@ -18,78 +17,171 @@
         </div>
         <nav class="headerCentral">
             <ul>
-                <li><a href="#">Inicio</a></li>
+                <li><a href="home.html">Inicio</a></li>
                 <li><a href="publicar.html">Publicar</a></li>
-                <li><a href="#">Amigos</a></li>
+                <li><a href="amigos.html">Amigos</a></li>
                 <li><a href="#">Mi perfil</a></li>
             </ul>
         </nav>
     </header>
-
-    <div class="layout-pagina">
-
-        <aside class="aside-lateral">
-            <section class="aside-bloque">
-                <h2>Sugerencias</h2>
-                <ul class="lista-sugerencias">
-                    <li class="sugerencia">
-                        <img src="https://picsum.photos/50?random=6" alt="Avatar Usuario001">
-                        <div class="sugerencia-info">
-                            <strong>Usuario001</strong>
-                            <span>Amigo en común</span>
-                        </div>
-                        <button class="btn-anadir">+</button>
-                    </li>
-                    <li class="sugerencia">
-                        <img src="https://picsum.photos/50?random=7" alt="Avatar Usuario002">
-                        <div class="sugerencia-info">
-                            <strong>Usuario002</strong>
-                            <span>Amigo en común</span>
-                        </div>
-                        <button class="btn-anadir">+</button>
-                    </li>
-                    <li class="sugerencia">
-                        <img src="https://picsum.photos/50?random=05" alt="Avatar Usuario003">
-                        <div class="sugerencia-info">
-                            <strong>Usuario003</strong>
-                            <span>Amigo en común</span>
-                        </div>
-                        <button class="btn-anadir">+</button>
-                    </li>
-                    <li class="sugerencia">
-                        <img src="https://picsum.photos/50?random=8" alt="Avatar Usuario003">
-                        <div class="sugerencia-info">
-                            <strong>Usuario003</strong>
-                            <span>Amigo en común</span>
-                        </div>
-                        <button class="btn-anadir">+</button>
-                    </li>
-                    <li class="sugerencia">
-                        <img src="https://picsum.photos/50?random=9" alt="Avatar Usuario003">
-                        <div class="sugerencia-info">
-                            <strong>Usuario004</strong>
-                            <span>Amigo en común</span>
-                        </div>
-                        <button class="btn-anadir">+</button>
-                    </li>
-                    <li class="sugerencia">
-                        <img src="https://picsum.photos/50?random=2" alt="Avatar Usuario003">
-                        <div class="sugerencia-info">
-                            <strong>Usuario005</strong>
-                            <span>Amigo en común</span>
-                        </div>
-                        <button class="btn-anadir">+</button>
-                    </li>
-                </ul>
-                <button class="btn-ver-mas-sugerencias">Ver más sugerencias</button>
-            </section>
-
-        </aside>
-
         <main>
-            
+            <section>
+                <div class="layout-pagina">
+                    <aside class="aside-lateral">
+                        <section class="aside-bloque">
+                            <h2>Búsqueda</h2>
+                            <input type="text" placeholder="Buscar por nombre..." class="buscador-amigos">
+                        </section>
+                        <section class="aside-bloque">
+                            <h2>Listas</h2>
+                            <ul class="lista-etiquetas">
+                                <li><span class="etiqueta">Recuerdos comunes</span></li>
+                                <li><span class="etiqueta">Sin actividad común</span></li>
+                            </ul>
+                        </section>
+                    </aside>
 
+                    <main>
+                        <section class="seccion-amigos">
+                            <h1 class="titulo-seccion">Tus amigos</h1>
+                            
+                            <div class="amigos-flex-container">
+                                
+                                <div class="amigo-card-v2">
+                                    <img src="https://picsum.photos/200?random=1" alt="Perfil" class="amigo-avatar">
+                                    <div class="amigo-detalles">
+                                        <h3>@carlos_Vrm</h3>
+                                        <p>Carlos Rodríguez</p>
+                                        <div class="amigo-meta">
+                                            <span>3 Recuerdos compartidos</span>
+                                        </div>
+                                        <div class="amigo-footer-card">
+                                            <button class="btn-seguir">Ver perfil</button>
+                                            <button class="btn-msg">Mensaje</button>
+                                        </div>
+                                    </div>
+                                </div>
 
+                            <div class="amigo-card-v2">
+                                <img src="https://picsum.photos/200?random=2" alt="Perfil" class="amigo-avatar">
+                                <div class="amigo-detalles">
+                                    <h3>@lucia_sky</h3>
+                                    <p>Lucía Fernández</p>
+                                    <div class="amigo-meta">
+                                        <span>16 Recuerdos compartidos</span>
+                                    </div>
+                                    <div class="amigo-footer-card">
+                                        <button class="btn-seguir">Ver perfil</button>
+                                        <button class="btn-msg">Mensaje</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="amigo-card-v2">
+                                <img src="https://picsum.photos/200?random=3" alt="Perfil" class="amigo-avatar">
+                                <div class="amigo-detalles">
+                                    <h3>@marcos_dev</h3>
+                                    <p>Marcos Giraldo</p>
+                                    <div class="amigo-meta">
+                                        <span>9 Recuerdos compartidos</span>
+                                    </div>
+                                    <div class="amigo-footer-card">
+                                        <button class="btn-seguir">Ver perfil</button>
+                                        <button class="btn-msg">Mensaje</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="amigo-card-v2">
+                                <img src="https://picsum.photos/200?random=4" alt="Perfil" class="amigo-avatar">
+                                <div class="amigo-detalles">
+                                    <h3>@sofia_lens</h3>
+                                    <p>Sofía Castro</p>
+                                    <div class="amigo-meta">
+                                        <span>7 Recuerdos compartidos</span>
+                                    </div>
+                                    <div class="amigo-footer-card">
+                                        <button class="btn-seguir">Ver perfil</button>
+                                        <button class="btn-msg">Mensaje</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="amigo-card-v2">
+                                <img src="https://picsum.photos/200?random=5" alt="Perfil" class="amigo-avatar">
+                                <div class="amigo-detalles">
+                                    <h3>@javi_trek</h3>
+                                    <p>Javier Montes</p>
+                                    <div class="amigo-meta">
+                                        <span>21 Recuerdos compartidos</span>
+                                    </div>
+                                    <div class="amigo-footer-card">
+                                        <button class="btn-seguir">Ver perfil</button>
+                                        <button class="btn-msg">Mensaje</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="amigo-card-v2">
+                                <img src="https://picsum.photos/200?random=6" alt="Perfil" class="amigo-avatar">
+                                <div class="amigo-detalles">
+                                    <h3>@valeria_bio</h3>
+                                    <p>Valeria Rivas</p>
+                                    <div class="amigo-meta">
+                                        <span>7 Recuerdos compartidos</span>
+                                    </div>
+                                    <div class="amigo-footer-card">
+                                        <button class="btn-seguir">Ver perfil</button>
+                                        <button class="btn-msg">Mensaje</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="amigo-card-v2">
+                                <img src="https://picsum.photos/200?random=7" alt="Perfil" class="amigo-avatar">
+                                <div class="amigo-detalles">
+                                    <h3>@dani_beats</h3>
+                                    <p>Daniel Salazar</p>
+                                    <div class="amigo-meta">
+                                        <span>1 Recuerdos compartidos</span>
+                                    </div>
+                                    <div class="amigo-footer-card">
+                                        <button class="btn-seguir">Ver perfil</button>
+                                        <button class="btn-msg">Mensaje</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="amigo-card-v2">
+                                <img src="https://picsum.photos/200?random=8" alt="Perfil" class="amigo-avatar">
+                                <div class="amigo-detalles">
+                                    <h3>@pau_vlogs</h3>
+                                    <p>Paula Méndez</p>
+                                    <div class="amigo-meta">
+                                        <span>11 Recuerdos compartidos</span>
+                                    </div>
+                                    <div class="amigo-footer-card">
+                                        <button class="btn-seguir">Ver perfil</button>
+                                        <button class="btn-msg">Mensaje</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="amigo-card-v2">
+                                <img src="https://picsum.photos/200?random=9" alt="Perfil" class="amigo-avatar">
+                                <div class="amigo-detalles">
+                                    <h3>@elena_art</h3>
+                                    <p>Elena Martínez</p>
+                                    <div class="amigo-meta">
+                                        <span>5 Recuerdos compartidos</span>
+                                    </div>
+                                    <div class="amigo-footer-card">
+                                        <button class="btn-seguir">Ver perfil</button>
+                                        <button class="btn-msg">Mensaje</button>
+                                    </div>
+                                </div>
+                            </div>
+            </section>
         </main>
     </div>
 
@@ -113,5 +205,4 @@
     </footer>
 
 </body>
-
 </html>

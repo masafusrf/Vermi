@@ -1,77 +1,174 @@
-/* Contenedor principal de la lista */
-.lista-sugerencias {
+/* --- LAYOUT ESTRUCTURAL --- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
+.layout-pagina {
     display: flex;
-    flex-direction: column; /* En un aside, lo normal es que vayan en columna */
-    gap: 12px;
-    padding: 0;
-    list-style: none;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    gap: 30px;
+    min-height: 80vh; /* Asegura que el main no quede muy corto */
+}
+
+/* --- ASIDE UNIFICADO (ESTILO HOME) --- */
+.aside-lateral {
+    background-color: white; /* Contenedor blanco para todo el bloque */
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    height: fit-content;
+    min-width: 270px;
+}
+
+.aside-bloque {
+    padding: 16px 20px;
+    box-shadow: none;
+    margin-bottom: 0;
+    border-bottom: 1px solid #e0e3e8;
+}
+
+/* Quitamos la línea al último bloque para que no quede huérfana */
+.aside-bloque:last-child {
+    border-bottom: none;
+}
+
+.aside-bloque h2 {
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #1a2d4a;
+    margin-bottom: 12px;
+    border-bottom: none; /* Quitamos el borde que pusimos antes */
+    padding-bottom: 0;
+}
+
+/* Ajuste del buscador para que encaje mejor en el bloque compacto */
+.buscador-amigos {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #e0e3e8;
+    border-radius: 4px;
+    background-color: #f0f2f5; /* Un tono gris claro para resaltar el input */
+    font-size: 0.9rem;
+}
+
+/* Etiquetas (Estilo exacto de Home) */
+.etiqueta {
+    display: block;
+    padding: 8px 10px;
+    margin: 4px 0;
+    border-radius: 4px;
+    color: #1a2d4a;
+    text-decoration: none;
+}
+
+.etiqueta:hover {
+    background-color:#c9960b ;
+    color:#f0f2f5 ; /* El dorado de tu Home */
+    cursor: pointer;
+}
+
+/* --- SECCIÓN PRINCIPAL (MAIN) --- */
+main {
+    flex: 1; /* Ocupa el resto del espacio */
+}
+
+.titulo-seccion {
+    color: #163A5F;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+/* --- CONTENEDOR --- */
+.amigos-flex-container {
+    display: grid;
+    /* Creamos columnas que ocupan una fracción (1fr) pero con un límite mínimo */
+    /* auto-fit asegura que las tarjetas se ajusten, pero NO las estira si no hay más */
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    /* Alineamos al inicio para que si hay una sola tarjeta, se quede a la izquierda */
+    justify-content: start; 
+}
+
+/* --- TARJETAS --- */
+.amigo-card-v2 {
+    background-color: white;
+    border-radius: 6px; /* Coherente con home.css */
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08); /* Coherente con home.css */
+    min-width: 400px;
+    /* Eliminamos cualquier propiedad de flex anterior */
+    width: 100%; 
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 965px) {
+    .amigos-flex-container {
+        /* En pantallas pequeñas, una sola columna que ocupe todo */
+        grid-template-columns: 1fr;
+    }
+}
+
+.amigo-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #163A5F;
+}
+
+.amigo-detalles {
+    flex: 1;
+}
+
+.amigo-detalles h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #3dbfad;
+}
+
+.amigo-detalles p {
+    margin: 4px 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.amigo-meta {
+    font-size: 0.85rem;
+    color: #999;
+    margin: 10px 0;
+}
+
+/* --- BOTONES --- */
+.amigo-footer-card {
+    display: flex;
+    gap: 10px;
     margin-top: 15px;
 }
 
-/* Tarjeta individual de sugerencia */
-.sugerencia {
-    display: flex;
-    align-items: center;
-    background: #ffffff;
-    border: 1px solid #eee;
-    padding: 10px;
-    border-radius: 10px;
-    transition: background 0.2s;
+.btn-seguir, .btn-msg {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: bold;
+    flex: 1;
 }
 
-.sugerencia:hover {
-    background: #f9f9f9;
+.btn-seguir {
+    background-color: #3dbfad;
+    color: white;
 }
 
-/* Imagen de perfil */
-.sugerencia img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-/* Bloque de texto central */
-.sugerencia-info {
-    margin-left: 10px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.sugerencia-info strong {
-    font-size: 0.9rem;
+.btn-msg {
+    background-color: #e0e0e0;
     color: #333;
 }
 
-.sugerencia-info span {
-    font-size: 0.75rem;
-    color: #666;
-}
-
-/* Botón Añadir */
-.btn-anadir {
-    background: #eee;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.2s;
-}
-
-.btn-anadir:hover {
-    background: #ddd;
-}
-
-/* Botón Ver más (el que está fuera de la lista) */
-.btn-ver-mas-sugerencias {
-    width: 100%;
-    margin-top: 15px;
-    padding: 8px;
-    background: transparent;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 0.85rem;
+.btn-seguir:hover, .btn-msg:hover {
+    opacity: 0.8;
 }

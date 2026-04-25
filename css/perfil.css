@@ -1,14 +1,12 @@
-/* layout general */
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: Arial, sans-serif; background-color: #f0f2f5; color: #1a2d4a; min-height: 100vh; display: flex; flex-direction: column; }
-img { display: block; max-width: 100%; }
-a { text-decoration: none; color: inherit; }
+/* general */
+* { margin: 0; padding: 0; }
+a { text-decoration: none; }
 ul { list-style: none; }
 
-/*cabecera perfil*/
+/* perfil */
 .perfil-cabecera {
     background-color: white;
-    border-radius: 6px;
+    border-radius: 8px;
     padding: 24px;
     display: flex;
     flex-direction: column;
@@ -69,7 +67,7 @@ ul { list-style: none; }
     padding: 10px 20px;
     font-size: 0.95rem;
     color: #6b7280;
-    border-bottom: 3px solid transparent;
+    border-bottom: 2px solid transparent;
     margin-bottom: -2px;
 }
 
@@ -92,7 +90,7 @@ ul { list-style: none; }
 
 .publicacion-card {
     background-color: white;
-    border-radius: 6px;
+    border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 }
@@ -136,7 +134,7 @@ ul { list-style: none; }
     background-color: #3dbfad;
     color: white;
     border: none;
-    padding: 6px 14px;
+    padding: 8px 16px;
     border-radius: 4px;
     font-size: 0.85rem;
 }
@@ -160,7 +158,7 @@ ul { list-style: none; }
 .publicacion-descripcion {
     font-size: 0.9rem;
     color: #1a2d4a;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     line-height: 1.4;
 }
 
@@ -174,7 +172,7 @@ ul { list-style: none; }
 .publicacion-etiquetas {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 8px;
     align-items: center;
 }
 
@@ -190,6 +188,7 @@ ul { list-style: none; }
     font-size: 0.78rem;
     color: #6b7280;
     padding: 0;
+    cursor: pointer;
 }
 
 .btn-ver-mas-etiquetas:hover,
@@ -212,13 +211,13 @@ ul { list-style: none; }
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 6px;
     padding: 10px 0;
     background: none;
     border: none;
     border-right: 1px solid #e0e3e8;
     color: #6b7280;
     font-size: 0.9rem;
+    cursor: pointer;
 }
 
 .btn-stat:last-child {
@@ -228,6 +227,7 @@ ul { list-style: none; }
 .btn-stat svg {
     width: 20px;
     height: 20px;
+    cursor: pointer;
 }
 
 .btn-stat:hover {

@@ -175,42 +175,48 @@ header nav ul li a {
 }
 /* footer */
 
-footer{
+footer {
     background-color: #163A5F;
     color: aliceblue;
-}
-
-#paginasFooter{
+    padding: 2.5rem 3rem 2rem;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-#paginasFooter a{
+#paginasFooter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;    /* ← los enlaces bajan de línea si no caben */
+    gap: 12px;
+}
+
+#paginasFooter a {
     text-decoration: none;
     color: aliceblue;
-    margin-top: 100px;
     position: relative;
 }
 
-#logoYCopyFooter{
+#logoYCopyFooter {
     display: flex;
-    justify-content: space-around;
-    margin-top: 120px;
-    padding-bottom: 80px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;        /* ← el copy baja de línea si no cabe */
+    gap: 1rem;
 }
 
-#textoLogo{
-    margin-left: -80px;
-    
+#logo-footer {
+    object-fit: contain;
+    height: 80px;
 }
 
-#logoYCopyFooter img{
-    height: 100px;
-    width: 100px;
+#textoLogo {
+    margin-left: 25px;
 }
 
-#logoYCopyFooter > p:last-child{
-    margin-left: 780px;
+.Logo-eslogan-footer {
+    display: flex;
+    align-items: center;
 }
 
 #paginasFooter a::after {
@@ -222,6 +228,10 @@ footer{
     height: 2px;
     background-color: aliceblue;
     transition: width 0.3s ease;
+}
+
+#paginasFooter a:hover::after {
+    width: 100%;
 }
 
 #paginasFooter a:hover::after {

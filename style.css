@@ -94,7 +94,9 @@ p.registro {
     margin-top: 20px;
     text-align: center;
 }
-
+.enviar:hover{
+    color: white;
+}
 p.registro a {
     color: #4a7fb0;
     text-decoration: none;

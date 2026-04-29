@@ -1,0 +1,250 @@
+/* general */
+* { margin: 0; padding: 0; }
+a { text-decoration: none; }
+ul { list-style: none; }
+
+/* perfil */
+.perfil-cabecera {
+    background-color: white;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.perfil-foto {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.perfil-nombre {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.perfil-descripcion {
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+/* contadores */
+.perfil-contadores {
+    display: flex;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+.perfil-contadores div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perfil-contadores strong {
+    font-size: 1.1rem;
+}
+
+.perfil-contadores span {
+    font-size: 0.78rem;
+    color: #6b7280;
+}
+
+/* pestañas */
+.perfil-tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e0e3e8;
+}
+
+.perfil-tabs a {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    color: #6b7280;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+}
+
+.perfil-tabs a:hover {
+    color: #1a2d4a;
+}
+
+.perfil-tabs a.tab-activa {
+    color: #3dbfad;
+    border-bottom-color: #3dbfad;
+    font-weight: bold;
+}
+
+/* publicaciones */
+.publicacion-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.publicacion-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.publicacion-card figure {
+    position: relative;
+    margin: 0;
+}
+
+.publicacion-card figure img {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+/* avatar, nombre, seguir */
+.publicacion-autor-barra {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    border-bottom: 1px solid #e0e3e8;
+}
+
+.publicacion-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.publicacion-autor-nombre {
+    flex: 1;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+/* botones */
+.btn-seguir, .btn-editar-perfil {
+    background-color: #3dbfad;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+.btn-seguir:hover {
+    background-color: #5ecbbc;
+}
+
+.btn-editar-perfil {
+    margin-top: 8px;
+    background-color: #1a2d4a;
+}
+.btn-editar-perfil:hover {
+    background-color: #395279;
+}
+
+/* descrip, fecha, etiquetas */
+.publicacion-cuerpo {
+    padding: 12px 16px;
+}
+
+.publicacion-descripcion {
+    font-size: 0.9rem;
+    color: #1a2d4a;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.publicacion-fecha {
+    font-size: 0.78rem;
+    color: #6b7280;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.publicacion-etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+.publicacion-etiquetas .etiqueta {
+    font-size: 0.78rem;
+    padding: 3px 10px;
+}
+
+.btn-ver-mas-etiquetas,
+.btn-editar-etiquetas {
+    background: none;
+    border: none;
+    font-size: 0.78rem;
+    color: #6b7280;
+    padding: 0;
+    cursor: pointer;
+}
+
+.btn-ver-mas-etiquetas:hover,
+.btn-editar-etiquetas:hover {
+    color: #1a2d4a;
+}
+
+.btn-editar-etiquetas {
+    margin-left: auto;
+}
+
+/* stats y acciones */
+.publicacion-stats {
+    display: flex;
+    border-top: 1px solid #e0e3e8;
+}
+
+.btn-stat {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-right: 1px solid #e0e3e8;
+    color: #6b7280;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.btn-stat:last-child {
+    border-right: none;
+}
+
+.btn-stat svg {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.btn-stat:hover {
+    background-color: #f0f2f5;
+    color: #1a2d4a;
+}
+
+.btn-like.activo {
+    color: #e05a5a;
+}
+
+/* visibilidad publicación */
+.visibilidad {
+    font-size: 2rem;
+    margin-left: auto;
+}
+
+.visibilidad.publica  { color: #3dbfad; }
+.visibilidad.amigos   { color: #f5c518; }
+.visibilidad.privada  { color: #e05a5a; }

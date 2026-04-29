@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar perfil - Vermi</title>
+    <link rel="stylesheet" href="editarPerfil.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="assets/vermiLogo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="headerIzquierdo">
+            <img src="assets/vermiLogo.png" alt="Logotipo Vermi" class="logoNav">
+            <span>Vermi</span>
+        </div>
+        <nav class="headerCentral">
+            <ul>
+                <li class="pagina"><a href="#">Inicio</a></li>
+                <li class="pagina"><a href="publicar.html">Publicar</a></li>
+                <li class="pagina"><a href="#">Amigos</a></li>
+                <li class="pagina"><a href="#">Mi perfil</a></li>
+                <li class="paginaActual"><a href="#">Editar perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="contenido">
+
+        <h1>Edita tu perfil</h1>
+
+        <div id="fotoPerfil">
+            <img id="foto" src="https://picsum.photos/seed/miusuario/80/80" alt="Foto de perfil" width="150" height="150"
+                onerror="this.src='assets/vermiLogo.png';"><br>
+                <!-- por defecto, tendrá esta foto de perfil -->
+
+            <div id="botonesFoto">
+                <button id="cambiarFoto" type="submit">Cambiar foto</button>
+
+                <button id="eliminarFoto" type="submit">Eliminar foto</button>
+            </div>
+        </div>
+
+        <div id="nombres">
+            <h2>Jose</h2>
+            <h4>Me gusta la fontanería, el aceite de motor y levantar mucho peso en el gym💪. También disfruto aprendiendo cosas prácticas y mejorando cada día con trabajo y esfuerzo. </h4>
+        </div>
+
+        <form id="formDatos" action="" method="post">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre"><br>
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" name="usuario"><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"><br>
+            <label for="fechaNacimiento">Fecha de nacimiento</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento"><br>
+
+            <label for="descripcion">Descripción</label>
+            <textarea name="descripcion" id="descripcion" placeholder="¿Quién eres?"></textarea><br>
+
+            <div id="botonesGuardar">
+                <button id="cancelar" type="button" href="home.html">Cancelar</button>
+                <button id="guardar" type="submit" value="publicar">Guardar</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div id="paginasFooter">
+            <a href="">Sobre Vermi</a>
+            <a href="">Contacta con nosotros</a>
+            <a href="">Política de privacidad</a>
+        </div>
+
+        <div id="logoYCopyFooter">
+            <div class="Logo-eslogan-footer">
+                <img src="assets/vermiLogo.png" alt="logo" id="logo-footer">
+                <div id="textoLogo">
+                    <p>VERMI</p>
+                    <p>Recuerda en voz alta</p>
+                </div>
+            </div>
+            <p>© Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

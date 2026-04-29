@@ -1,0 +1,158 @@
+#contenido{
+    margin: 5% 15% 5% 15%;
+}
+
+#fotoPerfil{
+    display: flex;
+    flex-direction: row;
+}
+
+#foto{
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
+    border-radius: 200%;
+    height: 150px;
+    width: 150px;
+}
+
+#botonesFoto{
+    position: relative;
+}
+
+#cambiarFoto, #eliminarFoto{
+    margin-top: 30px;
+    margin-right: 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+#eliminarFoto {
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    background-color: #e6e6e6;  
+    color: #8c8c8c;
+    border: 1.5px solid #8c8c8c;
+}
+
+#cambiarFoto {
+    margin-left: 30px;
+    background-color: #eaedfd;
+    color: #5b92c6;
+    border: 1.5px solid #5b92c6;
+}
+
+#nombres{
+    margin-left: 10px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+#nombres h4{
+    margin-top: 0;
+    position: static;
+    top: 30px;
+}
+
+#formDatos {
+    margin: 60px auto 0;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0e3e8;
+    background-color: #ffffff;
+    padding: 100px 180px 100px 180px;
+    border-radius: 20px;
+}
+
+input{
+    height: 30px;
+    background-color: whitesmoke;
+    border: 1px solid #e0e3e8;
+} 
+
+#nombre, #usuario,#email, #fechaNacimiento{
+    width: 290px;
+}
+
+textarea{
+    height: 200px;
+    resize: none;
+    width: 290px;
+    background-color: whitesmoke;
+    border: 1px solid #e0e3e8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#botonesGuardar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#cancelar, #guardar{
+    height: 50px;
+    width: 120px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#cancelar{
+    background-color: #e6e6e6;  
+    color: #8c8c8c;
+    border: 1.5px solid #8c8c8c;
+}
+
+#guardar{
+    background-color: #eaedfd;
+    color: #5b92c6;
+    border: 1.5px solid #5b92c6;
+    margin-left: 15px;
+}
+
+#eliminarFoto, #cambiarFoto, #cancelar, #guardar{
+    cursor: pointer;
+}
+
+
+
+/* pseudoclases */
+
+#cambiarFoto:hover{
+    background-color: #4a7fb0;
+    color: white;
+}
+
+#eliminarFoto:hover {
+    background-color: #8c8c8cb2;  
+    color: white;
+}
+
+#cancelar:hover{
+    background-color: #8c8c8cb2;  
+    color: white;
+}
+
+#guardar:hover{
+    background-color: #4a7fb0;
+    color: white;
+}
+
+#cancelar:active{
+    background-color: #6e6e6eb2;  
+}
+
+#guardar:active{
+    background-color: #2266a5;
+}
+
+#eliminarFoto:active{
+    background-color: #6e6e6eb2;  
+}
+
+#cambiarFoto:active{
+    background-color: #2266a5
+}

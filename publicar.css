@@ -1,0 +1,131 @@
+#contenido {
+    margin: 5% 15% 5% 15%;
+}
+
+#formPublicar {
+    width: 360px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid #e0e3e8;
+    background-color: #ffffff;
+    padding: 100px 180px 100px 180px;
+    border-radius: 20px;
+}
+
+.imgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cajaImg {
+    width: 355px;
+    height: 60px;
+    border: 1px solid #e0e3e8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    background-color: whitesmoke;
+}
+
+/* hago que todos los hijos de .cajaImg tengan el pointer,
+si no no funciona en toda la caja */
+.cajaImg * {
+    cursor: pointer;
+}
+
+.cajaImg:hover {
+    border-color: #8c8c8cb2;
+}
+
+.cajaImg p {
+    margin: 5px;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* para que no se vea el boton de elegir archivo que viene por defecto */
+input[type="file"]::file-selector-button {
+    display: none;
+}
+
+input:not([type="file"]){
+    background-color: whitesmoke;
+    border: 1px solid #e0e3e8;
+}
+
+input, input[type="date"]{
+    height: 30px;
+}
+
+textarea{
+    height: 200px;
+    resize: none;
+    width: 355px;
+    margin-bottom: -30px;
+    background-color: whitesmoke;
+    border: 1px solid #e0e3e8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+select {
+    padding: 10px;
+    width: 100%;
+}
+
+
+#botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#cancelar,
+#guardar {
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+#cancelar {
+    background-color: #e6e6e6;  
+    color: #8c8c8c;
+    border: 1.5px solid #8c8c8c;
+}
+
+#guardar {
+    margin-left: 55px;
+    background-color: #eaedfd;
+    color: #5b92c6;
+    border: 1.5px solid #5b92c6;
+}
+
+
+
+/* pseudoclases */
+
+#cancelar:hover {
+    background-color: #8c8c8cb2;  
+    color: white;
+}
+
+#guardar:hover {
+    background-color: #4a7fb0;
+    color: white;
+}
+
+#cancelar:active {
+    background-color: #6e6e6eb2;  
+}
+
+#guardar:active {
+    background-color: #2266a5
+}

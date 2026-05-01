@@ -130,24 +130,40 @@ ul { list-style: none; }
 }
 
 /* botones */
-.btn-seguir, .btn-editar-perfil {
+.perfil-acciones {
+    margin-top: 8px;
+    display: flex; 
+    gap: 8px; 
+}
+
+.btn-seguir, .btn-editar-perfil, .btn-logout {
     background-color: #3dbfad;
     color: white;
     border: none;
     padding: 8px 16px;
     border-radius: 4px;
     font-size: 0.85rem;
+    font-weight: bold;
 }
 .btn-seguir:hover {
     background-color: #5ecbbc;
 }
 
 .btn-editar-perfil {
-    margin-top: 8px;
     background-color: #1a2d4a;
 }
 .btn-editar-perfil:hover {
     background-color: #395279;
+}
+
+.btn-logout {
+    background-color: transparent;
+    color: #e05a5a;
+    border: 1px solid #e05a5a;
+}
+.btn-logout:hover {
+    background-color: #e05a5a;
+    color: white;
 }
 
 /* descrip, fecha, etiquetas */
